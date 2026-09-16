@@ -1,0 +1,40 @@
+# ---- secrets: never commit keys ----
+.env
+.env.*
+!.env.example
+*.env
+!*.env.example
+.parley.env
+*.key
+*.pem
+secrets/
+credentials*.json
+
+# ---- instructor-only material never lives in this repo ----
+# (answer keys, grading anchors, review packets, student data go in the private repo / Canvas)
+solutions/
+answer-keys/
+grading/
+students/
+*.roster.*
+
+# ---- local tooling ----
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.pyc
+.claude/settings.local.json
+
+# ---- OS / editor ----
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ---- logs / builds / scratch ----
+*.log
+dist/
+build/
+.cache/
+tmp/
