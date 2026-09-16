@@ -1,0 +1,20 @@
+html.__editor-on body{padding-bottom:72px}
+#__editor{position:fixed;left:0;right:0;bottom:0;z-index:99999;display:flex;gap:8px;align-items:center;padding:8px 14px;background:#1f2328;color:#eee;font:13px/1.3 -apple-system,Helvetica,Arial,sans-serif;box-shadow:0 -2px 8px rgba(0,0,0,.25)}
+#__editor button,#__editor select{font:inherit;padding:5px 10px;border:1px solid #555;border-radius:3px;background:#2c3238;color:#eee;cursor:pointer}
+#__editor button:hover{border-color:#999}
+#__editor button.on{background:#e74c3c;border-color:#e74c3c;color:#fff}
+#__editor #__msg{margin-left:auto;color:#bbb;max-width:48vw;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#__editor #__msg.ok{color:#7fd39a}#__editor #__msg.err{color:#ff8a80}
+#__editor #__close{padding:5px 9px}
+html.__editing [data-eid]{cursor:text}
+html.__editing [data-eid]:hover{outline:1px dashed #e74c3c;outline-offset:2px}
+html.__editing [data-eid]:focus{outline:2px solid #e74c3c;outline-offset:2px;background:#fff8f6}
+html.__editing [data-eid].__saved{outline:2px solid #3a9d5d;background:#eef8f1}
+html.__editing [data-eid].__err{outline:2px solid #ff8a80}
+#__mini{position:absolute;z-index:99998;display:flex;gap:4px}
+#__mini button{font:11px -apple-system,Helvetica,Arial,sans-serif;padding:3px 7px;border:1px solid #e74c3c;border-radius:3px;background:#fff;color:#e74c3c;cursor:pointer}
+#__mini button:hover{background:#e74c3c;color:#fff}
+#__panel{position:fixed;right:14px;bottom:58px;width:min(760px,92vw);max-height:62vh;overflow:auto;z-index:99999;background:#fff;color:#222;border:1px solid #ccc;border-radius:4px;box-shadow:0 4px 18px rgba(0,0,0,.2);padding:10px 14px;font:12px/1.45 Menlo,Consolas,monospace}
+#__panel .__ph{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;font-family:-apple-system,Helvetica,Arial,sans-serif}
+#__panel .__ph button{font:12px -apple-system,Helvetica,Arial,sans-serif;padding:3px 8px;border:1px solid #ccc;border-radius:3px;background:#f5f5f5;cursor:pointer}
+#__panel pre{white-space:pre-wrap;margin:0}

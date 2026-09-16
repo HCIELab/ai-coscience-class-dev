@@ -19,12 +19,15 @@ Also: `labs-catalog.html` (all thirteen lab ideas with wireframes), `labs/lab-te
 
 Design notes, the 13-week framework, and instructor material are **not** in this repo. They live in the course folder (`4_Research-Writing-Track/`).
 
-## Preview locally
+## Edit locally, inline
 
 ```bash
-python3 -m http.server 8000
-# open http://localhost:8000
+python3 dev/edit.py          # serves the site at http://127.0.0.1:8765/?edit=1 and opens it
 ```
+
+With editing on, click any paragraph, heading, list item, or table cell and type. Clicking away writes the change straight into the HTML file. Esc cancels. Alt-click a link to change its address. Focus a list item or table row for duplicate and delete buttons. "Changes" shows the uncommitted git diff; "Commit and push" runs git, or ask Claude to publish. The editor binds to localhost only and is standard-library Python.
+
+Plain preview without the editor: `python3 -m http.server 8000`.
 
 ## Rules for this repo
 
