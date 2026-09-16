@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Project · 6.8500</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Lato:wght@400;700&family=Roboto+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+<div class="wrap">
+<div class="brand"><a href="index.html">6.8500 <span>AI-Assisted HCI Research</span></a><span class="term">fall 2027 · draft site</span></div>
+<nav class="site" aria-label="Site">
+  <a href="index.html">Schedule</a>
+  <a href="project.html" aria-current="page">Project</a>
+  <a href="tools.html">Tools</a>
+  <a href="guides/index.html">Guides</a>
+  <a href="readings.html">Readings</a>
+  <a href="syllabus.html">Syllabus</a>
+</nav>
+
+<header class="page"><h1>Project</h1>
+<p class="lede">One project, two deliverables. On Fridays you build an AI research tool on the Parley API. On Wednesdays you write the paper about it, at CHI Late-Breaking Work length. The tool is demoed live on the last day; the paper could be submitted to CHI in January.</p></header>
+
+<section>
+<h2>Two ways to choose an idea</h2>
+<div class="cols">
+<div class="box"><h3>Track 1: join one of ours</h3><p>The teaching team presents scoped ideas in week 7. Rank up to three. Projects are sized to fit the term and come with a mentor from the research team.</p></div>
+<div class="box"><h3>Track 2: propose your own</h3><p>Pick a seed below or bring your own. Own proposals pass a <a href="#gate">feasibility gate</a>. The gate tests feasibility, not interest; the characteristic failure is scope.</p></div>
+</div>
+<p class="muted">Teams of one or two. Two works when there is a build component and an evaluation component that split cleanly.</p>
+</section>
+
+<section id="seeds">
+<h2>Idea seeds</h2>
+<p>One-line provocation plus a method hint, on purpose. The framing, the hypothesis, and the measure are yours. Seeds tagged <span class="tag">IRB</span> need your own IRB coverage, already in place.</p>
+<div class="tablewrap"><table class="plain"><thead><tr><th>Type</th><th>Provocation</th><th>Method hint</th></tr></thead><tbody>
+<tr><td><span class="tag">fab</span></td><td>A 3D-printed part that reports its own print quality</td><td class="hint">embed a passive feature whose appearance changes with a known defect; characterize sensitivity</td></tr>
+<tr><td><span class="tag">fab · measure</span></td><td>Printer profiles are folklore</td><td class="hint">pick one slicer parameter everyone knows the right value for; measure it across two printers; report the boundary</td></tr>
+<tr><td><span class="tag">fab</span></td><td>A technique reproducible with a $300 printer and nothing else</td><td class="hint">strip a lab-equipment technique from a hook-paper lineage; characterize what is lost</td></tr>
+<tr><td><span class="tag">fab · tool</span></td><td>A skill that turns a fabrication method section into a parametric CAD script</td><td class="hint">three papers in, measure how often the output is buildable</td></tr>
+<tr><td><span class="tag">fab</span></td><td>Repair as a first-class fabrication target</td><td class="hint">design for one repairable failure; measure repair vs replacement</td></tr>
+<tr><td><span class="tag">fab · measure</span></td><td>A property the datasheet does not report</td><td class="hint">build the jig, measure, publish the number and the jig</td></tr>
+<tr><td><span class="tag">data</span></td><td>Citation drift in one HCI subfield</td><td class="hint">50 citing sentences of one hook paper; code drift type; report the distribution</td></tr>
+<tr><td><span class="tag">data</span></td><td>Do LBWs that became full papers look different at the LBW stage?</td><td class="hint">matched sample; reverse outline; compare skeletons</td></tr>
+<tr><td><span class="tag">data · tool</span></td><td>An LLM's map of a field vs the citation graph</td><td class="hint">five hook papers; compare the model's top ten with graph structure and recency</td></tr>
+<tr><td><span class="tag">measure</span></td><td>How much does a figure's rhetorical choice change the takeaway?</td><td class="hint">redraw one figure five defensible ways; report the range</td></tr>
+<tr><td><span class="tag">data</span></td><td>Public HCI datasets: how many still load?</td><td class="hint">sample dataset links from 5 to 15-year-old CHI papers; report survival</td></tr>
+<tr><td><span class="tag">course · data</span></td><td>Where does verification effort go?</td><td class="hint">analyze the class's AI logs, anonymized, with consent</td></tr>
+<tr><td><span class="tag">course</span></td><td>The empty LBW as reviewer training</td><td class="hint">can students detect an AI-written paper better after the exercise? design the measure</td></tr>
+<tr><td><span class="tag">course · tool</span></td><td>A skill that reverse-outlines a draft and flags diary paragraphs</td><td class="hint">build it; measure agreement with hand tagging</td></tr>
+<tr><td><span class="tag">course · data</span></td><td>The token cost of a research assignment</td><td class="hint">instrument the Parley usage endpoint across the three assignments</td></tr>
+<tr><td><span class="tag">tool</span></td><td>Related-work assistant with a twist</td><td class="hint">does it find the dissenting cluster, or only the well-cited center?</td></tr>
+<tr><td><span class="tag">tool</span></td><td>A citation auditor that reads the cited source, not the abstract</td><td class="hint">measure alignment-detection against the A3 tables</td></tr>
+<tr><td><span class="tag">tool · fab</span></td><td>A skill that drafts a technical evaluation from a CSV and refuses when the data cannot support the claim</td><td class="hint">characterize the refusal boundary</td></tr>
+<tr><td><span class="tag">IRB</span></td><td>How novice researchers read a citation graph</td><td class="hint">think-aloud, small N, only with existing IRB coverage</td></tr>
+<tr><td><span class="tag">IRB · fab</span></td><td>Can non-experts reproduce a fabrication paper's method?</td><td class="hint">small reproduction study, only with existing IRB coverage</td></tr>
+</tbody></table></div>
+</section>
+
+<section id="gate">
+<h2>Feasibility gate</h2>
+<p>One page, for own proposals. Returned within a week with approve, revise once, or pick a seed. No penalty for picking a seed.</p>
+<ol>
+<li><b>Claim in one sentence</b>, the one your evaluation could fail to support</li>
+<li><b>Genre</b> and what counts as evidence in it</li>
+<li><b>Evidence you will have by the midpoint</b>, named: one figure, one artifact, one table</li>
+<li><b>The minimum paper</b> if everything after the midpoint fails</li>
+<li><b>What you cut if behind</b></li>
+<li><b>Access today</b>: data on disk, equipment, participants. "I will get" counts as no</li>
+<li><b>Hours arithmetic</b>: hours per week times weeks left, against your build-plus-write estimate</li>
+<li><b>AI plan</b>: which parts AI does most of, and how you verify each</li>
+</ol>
+<p class="muted">Red-flag words: longitudinal, deploy, recruit N, train a model.</p>
+</section>
+
+<section id="milestones">
+<h2>Milestones</h2>
+<div class="tablewrap"><table class="plain"><thead><tr><th>Week</th><th>Tool track (Fridays)</th><th>Paper track (Wednesdays)</th><th>Weight</th></tr></thead><tbody>
+<tr><td>7 to 8</td><td>ideas released; rank, or submit own proposal</td><td>seed or gate form</td><td></td></tr>
+<tr><td>9</td><td><a href="https://hcie.csail.mit.edu/classes/2027-fall-68500/project2-technical-proposal.html">technical proposal</a></td><td>related-work map (speedrun method) plus citation graph</td><td>6%</td></tr>
+<tr><td>9 to 13</td><td>weekly milestone meetings with the teaching team</td><td></td><td>5% each</td></tr>
+<tr><td>10</td><td>first working stage of the tool</td><td>first figure or artifact</td><td></td></tr>
+<tr><td>11</td><td><a href="https://hcie.csail.mit.edu/classes/2027-fall-68500/project4-midterm-presentation.html">midterm presentation</a>, 7 min talk + 8 min Q&amp;A</td><td>full draft, any quality, with your own reverse outline</td><td>6%</td></tr>
+<tr><td>13</td><td>evaluation harness run; failure rate measured</td><td>two peer reviews given; response to reviews drafted</td><td></td></tr>
+<tr><td>14</td><td><a href="https://hcie.csail.mit.edu/classes/2027-fall-68500/project5-final-presentation.html">final presentation</a>, 5 min + live demo</td><td>camera-ready LBW, AI log, one-page reflection</td><td>8%</td></tr>
+</tbody></table></div>
+<p class="muted">Weights follow the course grading: project 40% total. Project milestones have no extensions.</p>
+</section>
+
+<section id="format">
+<h2>Paper format</h2>
+<ul>
+<li>CHI Late-Breaking Work template and page limit, current call. The limit is the point</li>
+<li>Includes: the paper, the <a href="guides/working-with-ai.html">AI log</a>, and a one-page reflection: what you would cut for a real submission, what you would add with a year</li>
+<li>Graded on: one claim the evidence could have failed to support; every section holds up an introduction sentence; related work says what prior work cannot do; a figure the finding can be read from; honest limitations and log</li>
+<li>Not graded: whether the result is positive. A clean negative result with a tight argument is an excellent LBW</li>
+</ul>
+</section>
+
+<section id="tool">
+<h2>Tool requirements</h2>
+<ul>
+<li>Built on the Parley API with your class key; the key never enters the repo or the client</li>
+<li>Skill plus script or above: a script that controls model, prompt, and token budget, not only a SKILL.md</li>
+<li>An evaluation harness against a small ground-truth set; the report's first line is the tool's measured failure rate</li>
+<li>Cost logged per run, compared with your pre-run estimate</li>
+<li>Example projects: <a href="https://github.com/a554b554/Reactant">Reactant</a>, <a href="https://github.com/a554b554/AutoSurveyGPT">AutoSurveyGPT</a></li>
+</ul>
+</section>
+
+<footer><span>MIT CSAIL, HCI Engineering Group · 6.8500 fall 2027</span><span>draft, not yet reviewed by the teaching team</span></footer>
+</div>
+</body>
+</html>

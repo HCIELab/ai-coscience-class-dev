@@ -91,3 +91,51 @@ footer{margin-top:34px;color:var(--muted);font-size:12px}
 code{font-family:'Roboto Mono',Menlo,Consolas,monospace;font-size:.88em;background:var(--wire2);padding:1px 5px;border-radius:2px}
 
 @media (max-width:760px){header.top{grid-template-columns:1fr}}
+
+/* ---- site shell ---- */
+.brand{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:6px 16px;padding:6px 0 10px;font-family:'Lato','Roboto',Helvetica,Arial,sans-serif}
+.brand a{font-size:20px;text-decoration:none;color:var(--ink)} .brand a span{color:var(--pen)} .brand a:hover span{color:var(--hover)}
+.brand .term{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+nav.site{margin-top:0}
+header.page{padding-bottom:18px;border-bottom:1px solid var(--line)}
+header.page h1{margin-top:6px}
+header.page .lede{margin:10px 0 0;max-width:62em;color:var(--muted);font-size:15px}
+section{margin-top:28px}
+section h2{margin-bottom:10px}
+section h3{margin:14px 0 6px}
+.muted{color:var(--muted)}
+.callout{margin-top:14px;padding:10px 14px;border-left:3px solid var(--pen);background:#fbf7f6;font-size:14px}
+.callout b{margin-right:8px}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.box{border:1px solid var(--line);border-radius:3px;padding:14px 16px;background:var(--paper)}
+.box h3{margin:0 0 6px} .box p{margin:0;color:var(--muted);font-size:13.5px}
+a.box.link{text-decoration:none;color:inherit;display:block} a.box.link:hover{border-color:#cfcfcf} a.box.link:hover h3{color:var(--hover)}
+.tag.status{border-color:var(--pen);color:var(--pen)}
+footer{display:flex;flex-wrap:wrap;gap:6px 22px;border-top:1px solid var(--line);padding-top:14px}
+
+/* ---- tables ---- */
+.tablewrap,.schedwrap{overflow-x:auto;margin-top:14px}
+table.plain{width:100%;border-collapse:collapse;font-size:13.5px}
+table.plain th,table.plain td{text-align:left;vertical-align:top;padding:8px 10px;border-bottom:1px solid var(--line)}
+table.plain thead th{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:500}
+table.plain td.hint{color:var(--muted)}
+table.plain.kv th{width:160px;color:var(--muted);font-weight:400}
+ul.refs{padding-left:18px} ul.refs li{margin:5px 0;font-size:13.5px} ul.refs a{color:var(--hover);text-decoration:none;font-size:11px;letter-spacing:.06em;text-transform:uppercase;margin-left:6px}
+ul.team{list-style:none;padding:0} ul.team li{margin:4px 0}
+
+/* ---- schedule ---- */
+table.sched{width:100%;border-collapse:collapse;font-size:13.5px;min-width:900px}
+table.sched th,table.sched td{text-align:left;vertical-align:top;padding:9px 10px;border-bottom:1px solid var(--line)}
+table.sched thead th{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:500;border-bottom:2px solid var(--line)}
+table.sched tbody th{width:118px;font-weight:400}
+table.sched .wk{display:block;font-family:'Lato',sans-serif;font-size:20px;line-height:1;color:var(--ink)}
+table.sched .dates{display:block;font-size:12px;color:var(--muted);margin-top:4px}
+table.sched .note{display:block;font-size:11px;color:var(--pen);margin-top:4px}
+table.sched td.draft{color:var(--muted);font-style:italic}
+table.sched td.draft b{font-weight:500;color:var(--ink)}
+table.sched tr.now td,table.sched tr.now th{background:#fbf7f6}
+table.sched a{color:var(--ink)} table.sched a:hover{color:var(--hover)}
+.legendline{font-size:12px;color:var(--muted);margin-top:10px}
+.draft-key{font-style:italic}
+@media (max-width:760px){table.sched th{width:90px}}
+.labpage header.page{border-bottom:0;padding-bottom:6px}

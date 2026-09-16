@@ -4,471 +4,63 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow">
-<title>Writing Track Labs</title>
+<title>Schedule · 6.8500</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Lato:wght@400;700&family=Roboto+Mono:wght@400;500&display=swap">
 <link rel="stylesheet" href="assets/css/site.css">
 </head>
 <body>
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <defs>
-    <pattern id="txt" width="400" height="12" patternUnits="userSpaceOnUse">
-      <rect class="w" x="0" y="3" width="400" height="3" rx="1.5"/>
-    </pattern>
-    <marker id="arr" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-      <path d="M0,0 L8,4 L0,8 z" class="pen"/>
-    </marker>
-  </defs>
-</svg>
-
 <div class="wrap">
+<div class="brand"><a href="index.html">6.8500 <span>AI-Assisted HCI Research</span></a><span class="term">fall 2027 · draft site</span></div>
 <nav class="site" aria-label="Site">
-  <a href="index.html" aria-current="page">Labs catalog</a>
-  <a href="labs/lab-template.html">Lab page template</a>
+  <a href="index.html" aria-current="page">Schedule</a>
+  <a href="project.html">Project</a>
+  <a href="tools.html">Tools</a>
+  <a href="guides/index.html">Guides</a>
+  <a href="readings.html">Readings</a>
+  <a href="syllabus.html">Syllabus</a>
 </nav>
 
-<header class="top">
-  <div>
-    <div class="eyebrow">GenAI in HCI Research · Fall 2027 · draft</div>
-    <h1 style="margin-top:10px">Labs students run in the browser</h1>
-    <p class="lede">Thirteen browser labs for the research and writing track. One HTML page each, 20 to 45 minutes in class.</p>
-    <div class="legend">
-      <span><i class="sw" style="background:var(--tint-read)"></i>reading a field</span>
-      <span><i class="sw" style="background:var(--tint-struct)"></i>paper structure</span>
-      <span><i class="sw" style="background:var(--tint-review)"></i>reviewing</span>
-      <span><i class="sw" style="background:var(--tint-proj)"></i>project</span>
-      <span class="key">build: S afternoon · M weekend · L week</span>
-    </div>
-  </div>
-  <svg class="flow" viewBox="0 0 560 150" role="img" aria-label="Flow: one hook paper feeds the field labs, then structure labs, a review lab, and the LBW project; the AI log runs under all of them">
-    <rect class="card" x="4" y="30" width="84" height="46" rx="3"/>
-    <rect class="pen" x="12" y="40" width="42" height="3" rx="1.5"/><rect x="12" y="48" width="66" height="22" fill="url(#txt)"/>
-    <text class="ti" x="10" y="24">ONE HOOK PAPER</text>
-    <path class="pens" d="M88,53 L104,53" marker-end="url(#arr)"/>
-    <g>
-      <rect x="108" y="18" width="120" height="70" rx="3" style="fill:var(--tint-read)"/>
-      <text class="ti" x="114" y="30">READ THE FIELD</text>
-      <rect class="card" x="114" y="36" width="52" height="20"/><text x="118" y="49">map</text>
-      <rect class="card" x="170" y="36" width="52" height="20"/><text x="174" y="49">graph</text>
-      <rect class="card" x="114" y="60" width="52" height="20"/><text x="118" y="73">audit</text>
-      <rect class="card" x="170" y="60" width="52" height="20"/><text x="174" y="73">figure</text>
-    </g>
-    <path class="pens" d="M228,53 L244,53" marker-end="url(#arr)"/>
-    <g>
-      <rect x="248" y="18" width="120" height="70" rx="3" style="fill:var(--tint-struct)"/>
-      <text class="ti" x="254" y="30">ARGUE, DON'T NARRATE</text>
-      <rect class="card" x="254" y="36" width="34" height="20"/><text x="257" y="49">outline</text>
-      <rect class="card" x="291" y="36" width="34" height="20"/><text x="294" y="49">shuffle</text>
-      <rect class="card" x="328" y="36" width="34" height="20"/><text x="331" y="49">ablate</text>
-      <rect class="card" x="254" y="60" width="52" height="20"/><text x="257" y="73">empty LBW</text>
-      <rect class="card" x="310" y="60" width="52" height="20"/><text x="313" y="73">genres</text>
-    </g>
-    <path class="pens" d="M368,53 L384,53" marker-end="url(#arr)"/>
-    <g>
-      <rect x="388" y="18" width="76" height="70" rx="3" style="fill:var(--tint-review)"/>
-      <text class="ti" x="394" y="30">REVIEW</text>
-      <rect class="card" x="394" y="36" width="64" height="44"/><text x="398" y="50">v1 + reviews</text><text x="398" y="62">predict</text><text x="398" y="74">reveal v2</text>
-    </g>
-    <path class="pens" d="M464,53 L480,53" marker-end="url(#arr)"/>
-    <g>
-      <rect x="484" y="18" width="72" height="70" rx="3" style="fill:var(--tint-proj)"/>
-      <text class="ti" x="490" y="30">LBW</text>
-      <rect class="card" x="490" y="36" width="60" height="44"/><rect class="ik" x="496" y="44" width="30" height="3"/><rect x="496" y="52" width="48" height="22" fill="url(#txt)"/>
-    </g>
-    <rect x="4" y="104" width="552" height="30" rx="3" style="fill:var(--tint-log)"/>
-    <text class="ti" x="12" y="116">AI LOG</text><text x="12" y="127">asked · claimed · verified · result · did with it</text>
-    <text x="330" y="122">every lab appends one row per exchange</text>
-    <path class="mus" d="M46,76 L46,104" stroke-dasharray="2 2"/><path class="mus" d="M168,88 L168,104" stroke-dasharray="2 2"/><path class="mus" d="M308,88 L308,104" stroke-dasharray="2 2"/><path class="mus" d="M426,88 L426,104" stroke-dasharray="2 2"/><path class="mus" d="M520,88 L520,104" stroke-dasharray="2 2"/>
-  </svg>
+<header class="page">
+<h1>Schedule</h1>
+<p class="lede">6.8500 is a graduate course on integrating large language models into the stages of HCI research: literature, questions, prototypes, evaluation, writing. Wednesdays read and write the paper; Fridays build the tools. Both meet in one project you present in December.</p>
+<div class="callout" id="thisweek"><b>This week</b> <span id="thisweek-text">Course starts Wednesday, September 8, 2027.</span></div>
 </header>
+<div class="schedwrap">
+<table class="sched">
+<thead><tr><th>Week</th><th>Wednesday lecture</th><th>Wednesday lab</th><th>Friday lab</th><th>Due</th></tr></thead>
+<tbody>
+<tr data-start="2027-09-06"><th scope="row"><span class="wk">1</span><span class="dates">Sept 8 · Sept 10</span><span class=note>CHI deadline this week</span></th><td>How is AI changing HCI research</td><td class="draft">Setup: Parley, the AI log, claim a hook paper, three-pass read</td><td><a href="https://hcie.csail.mit.edu/classes/2027-fall-68500/lab1-mit-ai-tools-parley-chat-api.html">Lab 1: Parley Chat and API</a></td><td class="draft">hook paper claimed · intro slide</td></tr>
+<tr data-start="2027-09-13"><th scope="row"><span class="wk">2</span><span class="dates">Sept 15 · Sept 17</span></th><td class="draft">Contextualize, not critique: the four questions</td><td class="draft">Field map canvas</td><td>Transparency: keeping track of what AI did and when · <a href="https://hcie.csail.mit.edu/classes/2027-fall-68500/lab2-mit-ai-tools-token-use.html">Lab 2: Efficient token use</a></td><td class="draft">opt-out proposals</td></tr>
+<tr data-start="2027-09-20"><th scope="row"><span class="wk">3</span><span class="dates">Sept 22 · Sept 24</span><span class=note>Career Exploration Week</span></th><td>Accuracy, checking, and human oversight</td><td class="draft">Related-work explorer: import, resolve, circle clusters</td><td>Lab 3: Useful AI skills (skill files, history writing, humanizer)</td><td class="draft"><b>A1 field speedrun</b></td></tr>
+<tr data-start="2027-09-27"><th scope="row"><span class="wk">4</span><span class="dates">Sept 29 · Oct 1</span><span class=note>instructor traveling</span></th><td class="draft">The figure is the compressed argument (recorded)</td><td class="draft">Figure compare</td><td>Lab 4: Building your own AI research tool with Skills</td><td class="empty"></td></tr>
+<tr data-start="2027-10-04"><th scope="row"><span class="wk">5</span><span class="dates">Oct 6 · Oct 8</span></th><td class="draft">Citation drift: what a paper becomes</td><td class="draft">Citation drift auditor</td><td>Lab 5: AI research tool with Skills + Scripts</td><td class="draft"><b>A2 figure reproduction</b></td></tr>
+<tr data-start="2027-10-11"><th scope="row"><span class="wk">6</span><span class="dates">Oct 13 · Oct 15</span></th><td>Understanding a field</td><td class="draft">Reverse outline, scramble, ablation</td><td>Brainstorming ideas · Lab 6: config-driven pipeline</td><td class="draft"><b>A3 citation audit</b></td></tr>
+<tr data-start="2027-10-18"><th scope="row"><span class="wk">7</span><span class="dates">Oct 20 · Oct 22</span><span class=note>Family Weekend</span></th><td class="draft">Introductions: story, logic flow, the related-work handshake</td><td class="draft">Paired A/B reader, intro rewrite, alignment check</td><td>Related work · Lab 7: full web apps (React + Flask/Node)</td><td class="draft">project ideas released</td></tr>
+<tr data-start="2027-10-25"><th scope="row"><span class="wk">8</span><span class="dates">Oct 27 · Oct 29</span></th><td>Interface design: coding and design generation</td><td class="draft">Empty LBW tagger, genre skeletons</td><td class="draft">Project: choosing ideas, feasibility gate</td><td class="draft"><b>idea ranking or own proposal</b></td></tr>
+<tr data-start="2027-11-01"><th scope="row"><span class="wk">9</span><span class="dates">Nov 3 · Nov 5</span></th><td>Implementation: coding and design generation</td><td class="draft">Resubmission diagnostic: predict, then reveal</td><td>Evaluation</td><td class="draft">technical proposal · project related-work map</td></tr>
+<tr data-start="2027-11-08"><th scope="row"><span class="wk">10</span><span class="dates">Nov 10 · Nov 12</span></th><td>Using LLMs to simulate human evaluation</td><td class="draft">Draft one section with AI, tag it, log it</td><td>Writing: explaining AI use in papers, grants, talks · Lab: writing tools</td><td class="draft">first figure or artifact</td></tr>
+<tr data-start="2027-11-15"><th scope="row"><span class="wk">11</span><span class="dates">Nov 17 · Nov 19</span><span class=note>drop date Nov 18</span></th><td class="draft">Project clinic</td><td class="draft">Reverse outline your own draft</td><td><a href="https://hcie.csail.mit.edu/classes/2027-fall-68500/project4-midterm-presentation.html">Midterm presentation</a> (7 min + 8 min Q&amp;A)</td><td class="draft"><b>full draft, any quality</b> · midterm slides</td></tr>
+<tr data-start="2027-11-22"><th scope="row"><span class="wk">12</span><span class="dates">Nov 24 · Nov 26</span><span class=note>Thanksgiving</span></th><td>no lecture</td><td>optional project worktime</td><td>no class</td><td class="empty"></td></tr>
+<tr data-start="2027-11-29"><th scope="row"><span class="wk">13</span><span class="dates">Dec 1 · Dec 3</span></th><td>Responsibility and ethics: who is responsible when AI is involved</td><td class="draft">Peer hostile review, two drafts each</td><td>Conclusion: effects of AI on individual performance · worktime</td><td class="draft">two peer reviews</td></tr>
+<tr data-start="2027-12-06"><th scope="row"><span class="wk">14</span><span class="dates">Dec 8</span><span class=note>last class</span></th><td><a href="https://hcie.csail.mit.edu/classes/2027-fall-68500/project5-final-presentation.html">Final presentations</a> (5 min) + live demos</td><td class="empty"></td><td class="empty"></td><td class="draft"><b>final LBW paper, tool, AI log, reflection</b></td></tr>
+</tbody>
+</table>
+</div>
+<p class="legendline"><span class="draft-key">grey italic</span> = proposed, not yet reviewed by the teaching team · Wed and Fri, 11 to 12:30, 34-501</p>
+<script>
+(function(){
+  try{
+    var rows=document.querySelectorAll('tr[data-start]'),now=new Date(),hit=null,first=null;
+    rows.forEach(function(r){var s=new Date(r.dataset.start+'T00:00:00');if(!first)first=s;var e=new Date(s);e.setDate(e.getDate()+7);if(now>=s&&now<e)hit=r;});
+    var t=document.getElementById('thisweek-text');
+    if(hit){hit.classList.add('now');t.textContent='Week '+hit.querySelector('.wk').textContent+': '+hit.querySelector('.dates').textContent+'. Scroll to the highlighted row.';}
+    else if(now<first){t.textContent='Course starts Wednesday, September 8, 2027.';}
+    else{t.textContent='The course has ended. Thanks for a good term.';}
+  }catch(e){}
+})();
+</script>
 
-<!-- ============ GROUP 1: READING A FIELD ============ -->
-<section class="group">
-  <div class="grouphead"><h2>Reading a field</h2></div>
-  <div class="grid">
-
-  <article class="lab">
-    <figure><svg viewBox="0 0 320 200" role="img" aria-label="Field map canvas: four quadrants with draggable paper cards and a timeline">
-      <rect class="w2" width="320" height="14"/><circle class="w" cx="8" cy="7" r="2"/><circle class="w" cx="16" cy="7" r="2"/><circle class="w" cx="24" cy="7" r="2"/><rect class="pp" x="36" y="4" width="110" height="6" rx="3"/>
-      <line class="ln" x1="160" y1="14" x2="160" y2="172"/><line class="ln" x1="0" y1="93" x2="320" y2="93"/>
-      <text x="6" y="24">BEFORE</text><text x="166" y="24">WHO DISAGREES</text><text x="6" y="103">AFTER</text><text x="166" y="103">WHY ATTENTION</text>
-      <g transform="translate(10,30)"><rect class="card" width="56" height="24" rx="2"/><rect class="ik" x="4" y="4" width="30" height="3" rx="1"/><rect x="4" y="10" width="48" height="10" fill="url(#txt)"/></g>
-      <g transform="translate(74,42)"><rect class="card" width="56" height="24" rx="2"/><rect class="ik" x="4" y="4" width="26" height="3" rx="1"/><rect x="4" y="10" width="48" height="10" fill="url(#txt)"/></g>
-      <g transform="translate(172,32)"><rect class="card" width="56" height="24" rx="2"/><rect class="ik" x="4" y="4" width="34" height="3" rx="1"/><rect x="4" y="10" width="48" height="10" fill="url(#txt)"/></g>
-      <g transform="translate(240,46)"><rect class="card" width="56" height="24" rx="2"/><rect class="ik" x="4" y="4" width="22" height="3" rx="1"/><rect x="4" y="10" width="48" height="10" fill="url(#txt)"/></g>
-      <g transform="translate(10,112)"><rect class="card" width="56" height="24" rx="2"/><rect class="ik" x="4" y="4" width="30" height="3" rx="1"/><rect x="4" y="10" width="48" height="10" fill="url(#txt)"/></g>
-      <g transform="translate(74,124)"><rect class="card" width="56" height="24" rx="2"/><rect class="ik" x="4" y="4" width="36" height="3" rx="1"/><rect x="4" y="10" width="48" height="10" fill="url(#txt)"/></g>
-      <g transform="translate(24,144)"><rect class="card" width="56" height="24" rx="2"/><rect class="ik" x="4" y="4" width="28" height="3" rx="1"/><rect x="4" y="10" width="48" height="10" fill="url(#txt)"/></g>
-      <g transform="translate(172,112)"><rect class="card" width="56" height="24" rx="2" style="stroke:var(--ai)"/><rect class="ai" x="4" y="4" width="30" height="3" rx="1"/><rect x="4" y="10" width="48" height="10" fill="url(#txt)"/></g>
-      <g transform="translate(132,69)"><rect class="card" width="56" height="26" rx="2" style="stroke:var(--pen);stroke-width:1.4"/><text class="tpen" x="8" y="12">HOOK PAPER</text><rect x="6" y="16" width="44" height="6" fill="url(#txt)"/></g>
-      <g transform="translate(236,140) rotate(-4)"><rect class="w2" x="3" y="3" width="56" height="24" rx="2"/><rect class="card" width="56" height="24" rx="2"/><rect class="ik" x="4" y="4" width="30" height="3" rx="1"/><rect x="4" y="10" width="48" height="10" fill="url(#txt)"/></g>
-      <polygon class="cur" points="288,160 288,172 291,169 294,175 296,174 293,168 297,168"/>
-      <line class="ln" x1="12" y1="186" x2="308" y2="186"/>
-      <line class="mus" x1="40" y1="182" x2="40" y2="190"/><line class="mus" x1="280" y1="182" x2="280" y2="190"/>
-      <circle class="pen" cx="150" cy="186" r="3"/>
-      <text x="30" y="197">2010</text><text x="136" y="197">2016 hook</text><text x="270" y="197">2026</text>
-    </svg></figure>
-    <div class="cap">
-      <div class="meta"><span class="tag">session A</span><span class="tag">build M</span></div>
-      <h3>Field map canvas</h3>
-      <p>Drag paper cards into before, disagrees, after, why. Empty quadrants show at a glance.</p>
-    </div>
-  </article>
-
-  <article class="lab">
-    <figure><svg viewBox="0 0 320 200" role="img" aria-label="Citation graph overlay: clusters circled by hand, nodes colored by whether they are in the student's map, a gap, or Claude's list">
-      <rect class="w2" width="320" height="14"/><circle class="w" cx="8" cy="7" r="2"/><circle class="w" cx="16" cy="7" r="2"/><circle class="w" cx="24" cy="7" r="2"/><rect class="pp" x="36" y="4" width="110" height="6" rx="3"/>
-      <line class="ln" x1="80" y1="80" x2="105" y2="95"/><line class="ln" x1="80" y1="80" x2="65" y2="105"/><line class="ln" x1="80" y1="80" x2="95" y2="60"/><line class="ln" x1="95" y1="60" x2="120" y2="70"/><line class="ln" x1="105" y1="95" x2="120" y2="70"/><line class="ln" x1="105" y1="95" x2="110" y2="120"/><line class="ln" x1="55" y1="75" x2="80" y2="80"/><line class="ln" x1="65" y1="105" x2="110" y2="120"/>
-      <line class="ln" x1="240" y1="60" x2="262" y2="78"/><line class="ln" x1="240" y1="60" x2="228" y2="88"/><line class="ln" x1="262" y1="78" x2="255" y2="100"/><line class="ln" x1="228" y1="88" x2="255" y2="100"/>
-      <line class="ln" x1="110" y1="120" x2="200" y2="150"/><line class="ln" x1="200" y1="150" x2="222" y2="160"/><line class="ln" x1="222" y1="160" x2="240" y2="145"/><line class="ln" x1="200" y1="150" x2="210" y2="172"/>
-      <circle class="ai" cx="80" cy="80" r="9"/><circle class="ok" cx="105" cy="95" r="7"/><circle class="ok" cx="65" cy="105" r="6"/><circle class="ai" cx="95" cy="60" r="5"/><circle class="ai" cx="120" cy="70" r="5"/><circle class="w" cx="55" cy="75" r="4"/><circle class="ok" cx="110" cy="120" r="4"/>
-      <circle class="gp" cx="240" cy="60" r="6"/><circle class="gp" cx="262" cy="78" r="5"/><circle class="gp" cx="228" cy="88" r="4"/><circle class="w" cx="255" cy="100" r="4"/>
-      <circle class="w" cx="200" cy="150" r="3"/><circle class="w" cx="222" cy="160" r="3"/><circle class="w" cx="240" cy="145" r="3"/><circle class="w" cx="210" cy="172" r="3"/>
-      <ellipse class="pens" cx="90" cy="90" rx="50" ry="42" stroke-dasharray="3 2"/>
-      <ellipse class="pens" cx="248" cy="80" rx="38" ry="32" stroke-dasharray="3 2"/>
-      <ellipse class="pens" cx="220" cy="158" rx="36" ry="22" stroke-dasharray="3 2"/>
-      <text class="tpen" x="68" y="142">"center"</text><text class="tpen" x="226" y="120">"faction"</text><text class="tpen" x="262" y="188">"recent edge"</text>
-      <rect class="w2" x="192" y="20" width="122" height="14" rx="2"/><text class="ti" x="197" y="30">1 of 3 clusters in your map</text>
-      <rect class="ok" x="10" y="174" width="7" height="7"/><text x="21" y="180">in your map</text>
-      <rect class="gp" x="10" y="186" width="7" height="7"/><text x="21" y="192">gap</text>
-      <rect class="ai" x="80" y="174" width="7" height="7"/><text x="91" y="180">Claude's ten</text>
-      <rect class="w" x="80" y="186" width="7" height="7"/><text x="91" y="192">unread</text>
-    </svg></figure>
-    <div class="cap">
-      <div class="meta"><span class="tag">session B</span><span class="tag">build M</span></div>
-      <h3>Graph overlay</h3>
-      <p>Circle clusters on the citation graph. Mark what you read, what you missed, what Claude picked.</p>
-    </div>
-  </article>
-
-  <article class="lab">
-    <figure><svg viewBox="0 0 320 200" role="img" aria-label="Citation drift auditor: what the paper says beside how a later paper cites it, with existence, metadata, and alignment lights">
-      <rect class="w2" width="320" height="14"/><circle class="w" cx="8" cy="7" r="2"/><circle class="w" cx="16" cy="7" r="2"/><circle class="w" cx="24" cy="7" r="2"/><rect class="pp" x="36" y="4" width="110" height="6" rx="3"/>
-      <rect class="card" x="6" y="20" width="150" height="170" rx="2"/>
-      <text class="ti" x="10" y="31">WHAT THE PAPER SAYS · §4.2</text>
-      <rect class="hl" x="10" y="60" width="140" height="14" opacity=".55"/>
-      <rect x="10" y="38" width="140" height="84" fill="url(#txt)"/>
-      <rect x="10" y="130" width="140" height="48" fill="url(#txt)"/>
-      <rect class="card" x="164" y="20" width="150" height="92" rx="2"/>
-      <text class="ti" x="168" y="31">HOW SMITH 2021 CITES IT</text>
-      <rect x="168" y="38" width="140" height="20" fill="url(#txt)"/>
-      <line class="pens" x1="168" y1="60" x2="300" y2="60" stroke-dasharray="2 1.5"/>
-      <text class="tpen" x="168" y="74">"showed"  vs  "suggests" (n=14)</text>
-      <rect class="pens" x="168" y="84" width="140" height="18" rx="2"/><text class="ti" x="173" y="96">drift: strength inflated  ▾</text>
-      <circle class="ok" cx="188" cy="140" r="8"/><circle class="ok" cx="238" cy="140" r="8"/><circle class="gp" cx="288" cy="140" r="8"/>
-      <text x="175" y="158">exists</text><text x="220" y="158">metadata</text><text x="275" y="158">aligns</text>
-      <rect class="ik" x="164" y="170" width="150" height="18" rx="2"/><text class="tp" x="196" y="182">add row to audit table</text>
-    </svg></figure>
-    <div class="cap">
-      <div class="meta"><span class="tag">assignment 3</span><span class="tag">build M</span></div>
-      <h3>Citation drift auditor</h3>
-      <p>Source passage beside each citing sentence. Three lights: exists, metadata, aligns.</p>
-    </div>
-  </article>
-
-  <article class="lab">
-    <figure><svg viewBox="0 0 320 200" role="img" aria-label="Figure compare: original figure beside the student's reproduction with a slider and a discrepancy table">
-      <rect class="w2" width="320" height="14"/><circle class="w" cx="8" cy="7" r="2"/><circle class="w" cx="16" cy="7" r="2"/><circle class="w" cx="24" cy="7" r="2"/><rect class="pp" x="36" y="4" width="110" height="6" rx="3"/>
-      <text class="ti" x="8" y="28">ORIGINAL · FIG 3</text><text class="ti" x="166" y="28">YOURS · from raw data</text>
-      <line class="mus" x1="20" y1="34" x2="20" y2="108"/><line class="mus" x1="20" y1="108" x2="150" y2="108"/>
-      <polyline class="iks" points="22,98 45,80 70,86 95,56 120,46 148,40"/>
-      <line class="mus" x1="178" y1="34" x2="178" y2="108"/><line class="mus" x1="178" y1="108" x2="308" y2="108"/>
-      <polyline class="pens" points="180,98 203,84 228,88 253,64 278,60 306,50"/>
-      <circle class="gps" cx="253" cy="64" r="5"/><text class="tpen" x="232" y="78">N 398 vs 412</text>
-      <line class="ln" x1="160" y1="26" x2="160" y2="112"/><circle class="card" cx="160" cy="70" r="7"/><text class="ti" x="155.5" y="72.5">‹›</text>
-      <text class="ti" x="8" y="128">DIFFERS</text><text class="ti" x="120" y="128">WHY</text><text class="ti" x="244" y="128">CONFIDENCE</text>
-      <line class="ln" x1="6" y1="132" x2="314" y2="132"/>
-      <rect x="8" y="138" width="100" height="10" fill="url(#txt)"/><rect x="120" y="138" width="110" height="10" fill="url(#txt)"/><rect class="hl" x="244" y="137" width="52" height="11" rx="2"/><text class="ti" x="248" y="145">exclusion?</text>
-      <rect x="8" y="156" width="80" height="10" fill="url(#txt)"/><rect x="120" y="156" width="110" height="10" fill="url(#txt)"/><rect class="gp" x="244" y="155" width="60" height="11" rx="2"/><text class="tp" x="248" y="163">undocumented</text>
-      <rect x="8" y="174" width="90" height="10" fill="url(#txt)"/><rect x="120" y="174" width="110" height="10" fill="url(#txt)"/><rect class="w2" x="244" y="173" width="54" height="11" rx="2"/><text class="ti" x="248" y="181">caption typo</text>
-    </svg></figure>
-    <div class="cap">
-      <div class="meta"><span class="tag">assignment 2</span><span class="tag">build S</span></div>
-      <h3>Figure compare</h3>
-      <p>Original beside your reproduction. Every discrepancy gets a hypothesis.</p>
-    </div>
-  </article>
-
-  </div>
-</section>
-
-<!-- ============ GROUP 2: PAPER STRUCTURE ============ -->
-<section class="group">
-  <div class="grouphead"><h2>Paper structure</h2></div>
-  <div class="grid">
-
-  <article class="lab">
-    <figure><svg viewBox="0 0 320 200" role="img" aria-label="Scramble and reassemble: shuffled paragraph blocks being dragged into order, with a signal picker on the right">
-      <rect class="w2" width="320" height="14"/><circle class="w" cx="8" cy="7" r="2"/><circle class="w" cx="16" cy="7" r="2"/><circle class="w" cx="24" cy="7" r="2"/><rect class="pp" x="36" y="4" width="110" height="6" rx="3"/>
-      <g transform="translate(6,20)"><rect class="card" width="186" height="20" rx="2"/><rect class="w2" x="4" y="4" width="16" height="12" rx="2"/><text class="ti" x="6" y="13">[4]</text><rect x="26" y="4" width="150" height="12" fill="url(#txt)"/></g>
-      <g transform="translate(6,44)"><rect class="card" width="186" height="20" rx="2"/><rect class="w2" x="4" y="4" width="16" height="12" rx="2"/><text class="ti" x="6" y="13">[1]</text><rect x="26" y="4" width="150" height="12" fill="url(#txt)"/></g>
-      <g transform="translate(6,68)"><rect class="card" width="186" height="20" rx="2"/><rect class="w2" x="4" y="4" width="16" height="12" rx="2"/><text class="ti" x="6" y="13">[6]</text><rect x="26" y="4" width="150" height="12" fill="url(#txt)"/></g>
-      <rect class="ln" x="6" y="92" width="186" height="20" rx="2" stroke-dasharray="3 2"/>
-      <line class="pens" x1="6" y1="92" x2="192" y2="92" stroke-width="2"/>
-      <g transform="translate(6,116)"><rect class="card" width="186" height="20" rx="2"/><rect class="w2" x="4" y="4" width="16" height="12" rx="2"/><text class="ti" x="6" y="13">[2]</text><rect x="26" y="4" width="150" height="12" fill="url(#txt)"/></g>
-      <g transform="translate(6,140)"><rect class="card" width="186" height="20" rx="2"/><rect class="w2" x="4" y="4" width="16" height="12" rx="2"/><text class="ti" x="6" y="13">[7]</text><rect x="26" y="4" width="150" height="12" fill="url(#txt)"/></g>
-      <g transform="translate(6,164)"><rect class="card" width="186" height="20" rx="2"/><rect class="w2" x="4" y="4" width="16" height="12" rx="2"/><text class="ti" x="6" y="13">[5]</text><rect x="26" y="4" width="150" height="12" fill="url(#txt)"/></g>
-      <g transform="translate(24,84) rotate(-2)"><rect class="w2" x="3" y="3" width="186" height="20" rx="2"/><rect class="card" width="186" height="20" rx="2" style="stroke:var(--pen)"/><rect class="pen" x="4" y="4" width="16" height="12" rx="2"/><text class="tp" x="6" y="13">[3]</text><rect x="26" y="4" width="150" height="12" fill="url(#txt)"/></g>
-      <polygon class="cur" points="70,100 70,112 73,109 76,115 78,114 75,108 79,108"/>
-      <text class="ti" x="202" y="30">SIGNAL FOR THIS MOVE</text>
-      <rect class="pen" x="202" y="36" width="112" height="13" rx="6"/><text class="tp" x="208" y="45">topic sentence</text>
-      <rect class="w2" x="202" y="53" width="112" height="13" rx="6"/><text x="208" y="62">forward reference</text>
-      <rect class="w2" x="202" y="70" width="112" height="13" rx="6"/><text x="208" y="79">back reference</text>
-      <rect class="w2" x="202" y="87" width="112" height="13" rx="6"/><text x="208" y="96">escalation</text>
-      <rect class="w2" x="202" y="104" width="112" height="13" rx="6"/><text x="208" y="113">content knowledge only</text>
-      <rect class="ik" x="202" y="150" width="112" height="16" rx="2"/><text class="tp" x="230" y="161">check order</text>
-      <text x="202" y="184">5 of 7 placed · 2 swaps</text>
-    </svg></figure>
-    <div class="cap">
-      <div class="meta"><span class="tag">session C</span><span class="tag">build S</span></div>
-      <h3>Scramble and reassemble</h3>
-      <p>Drag shuffled paragraphs back into order. Name the signal behind each move.</p>
-    </div>
-  </article>
-
-  <article class="lab">
-    <figure><svg viewBox="0 0 320 200" role="img" aria-label="Reverse outline builder: paper on the left, one sentence per paragraph on the right, dependency arrows, an orphan flagged">
-      <rect class="w2" width="320" height="14"/><circle class="w" cx="8" cy="7" r="2"/><circle class="w" cx="16" cy="7" r="2"/><circle class="w" cx="24" cy="7" r="2"/><rect class="pp" x="36" y="4" width="110" height="6" rx="3"/>
-      <rect class="card" x="6" y="20" width="140" height="170" rx="2"/>
-      <text x="10" y="36">¶1</text><rect x="24" y="28" width="116" height="16" fill="url(#txt)"/>
-      <text x="10" y="62">¶2</text><rect x="24" y="54" width="116" height="16" fill="url(#txt)"/>
-      <text x="10" y="88">¶3</text><rect x="24" y="80" width="116" height="16" fill="url(#txt)"/>
-      <text x="10" y="114">¶4</text><rect x="24" y="106" width="116" height="16" fill="url(#txt)"/>
-      <text x="10" y="140">¶5</text><rect x="24" y="132" width="116" height="16" fill="url(#txt)"/>
-      <text x="10" y="166">¶6</text><rect x="24" y="158" width="116" height="16" fill="url(#txt)"/>
-      <rect class="card" x="160" y="28" width="130" height="14" rx="2"/><rect class="ik" x="164" y="33" width="96" height="3" rx="1.5"/>
-      <rect class="card" x="160" y="54" width="130" height="14" rx="2"/><rect class="ik" x="164" y="59" width="110" height="3" rx="1.5"/>
-      <rect class="card" x="160" y="80" width="130" height="14" rx="2"/><rect class="ik" x="164" y="85" width="80" height="3" rx="1.5"/>
-      <rect class="card" x="160" y="106" width="130" height="14" rx="2" style="stroke:var(--gap)"/><rect class="ik" x="164" y="111" width="60" height="3" rx="1.5"/><rect class="gp" x="252" y="108" width="34" height="10" rx="2"/><text class="tp" x="256" y="115.5">orphan</text>
-      <rect class="card" x="160" y="132" width="130" height="14" rx="2"/><rect class="ik" x="164" y="137" width="104" height="3" rx="1.5"/>
-      <rect class="card" x="160" y="158" width="130" height="14" rx="2" style="stroke:var(--ok)"/><rect class="ik" x="164" y="163" width="52" height="3" rx="1.5"/><rect class="ok" x="228" y="160" width="58" height="10" rx="2"/><text class="tp" x="232" y="167.5">contribution</text>
-      <path class="pens" d="M290,35 C310,35 310,61 292,61" marker-end="url(#arr)"/>
-      <path class="pens" d="M290,61 C310,61 310,87 292,87" marker-end="url(#arr)"/>
-      <path class="pens" d="M290,87 C316,87 316,139 292,139" marker-end="url(#arr)"/>
-      <path class="pens" d="M290,139 C310,139 310,165 292,165" marker-end="url(#arr)"/>
-      <rect class="w" x="160" y="180" width="22" height="10" rx="5"/><circle class="pp" cx="165" cy="185" r="4"/><text x="188" y="188">compare with Claude's outline</text>
-    </svg></figure>
-    <div class="cap">
-      <div class="meta"><span class="tag">session C</span><span class="tag">build M</span></div>
-      <h3>Reverse outline builder</h3>
-      <p>One sentence per paragraph, then arrows. Orphans and the contribution sentence surface.</p>
-    </div>
-  </article>
-
-  <article class="lab">
-    <figure><svg viewBox="0 0 320 200" role="img" aria-label="Section ablation: section toggles on the left; switching off Related Work turns an introduction sentence red">
-      <rect class="w2" width="320" height="14"/><circle class="w" cx="8" cy="7" r="2"/><circle class="w" cx="16" cy="7" r="2"/><circle class="w" cx="24" cy="7" r="2"/><rect class="pp" x="36" y="4" width="110" height="6" rx="3"/>
-      <rect class="ok" x="6" y="28" width="20" height="10" rx="5"/><circle class="pp" cx="21" cy="33" r="4"/><text class="ti" x="32" y="36">Abstract</text>
-      <rect class="ok" x="6" y="52" width="20" height="10" rx="5"/><circle class="pp" cx="21" cy="57" r="4"/><text class="ti" x="32" y="60">Introduction</text>
-      <rect class="gp" x="6" y="76" width="20" height="10" rx="5"/><circle class="pp" cx="11" cy="81" r="4"/><text class="tpen" x="32" y="84">Related work</text>
-      <rect class="ok" x="6" y="100" width="20" height="10" rx="5"/><circle class="pp" cx="21" cy="105" r="4"/><text class="ti" x="32" y="108">Method</text>
-      <rect class="ok" x="6" y="124" width="20" height="10" rx="5"/><circle class="pp" cx="21" cy="129" r="4"/><text class="ti" x="32" y="132">Evaluation</text>
-      <rect class="ok" x="6" y="148" width="20" height="10" rx="5"/><circle class="pp" cx="21" cy="153" r="4"/><text class="ti" x="32" y="156">Discussion</text>
-      <rect class="card" x="140" y="20" width="174" height="150" rx="2"/>
-      <text class="ti" x="146" y="31">INTRODUCTION · what still holds up</text>
-      <rect x="146" y="40" width="160" height="12" fill="url(#txt)"/>
-      <rect class="gp" x="144" y="60" width="164" height="14" opacity=".22"/><rect x="146" y="61" width="112" height="12" fill="url(#txt)"/><rect class="gp" x="262" y="62" width="44" height="10" rx="2"/><text class="tp" x="265" y="69.5">no support</text>
-      <rect x="146" y="82" width="160" height="12" fill="url(#txt)"/>
-      <rect class="ok" x="144" y="102" width="164" height="14" opacity=".18"/><rect x="146" y="103" width="128" height="12" fill="url(#txt)"/><rect class="ok" x="278" y="104" width="28" height="10" rx="2"/><text class="tp" x="282" y="111.5">eval</text>
-      <rect x="146" y="124" width="160" height="12" fill="url(#txt)"/>
-      <rect x="146" y="145" width="120" height="12" fill="url(#txt)"/>
-      <path class="pens" d="M86,81 C112,81 118,67 144,67" stroke-dasharray="3 2"/>
-      <text x="6" y="190">Related work held up: the novelty claim, ¶2 s3</text>
-    </svg></figure>
-    <div class="cap">
-      <div class="meta"><span class="tag">session C</span><span class="tag">build S</span></div>
-      <h3>Section ablation</h3>
-      <p>Switch a section off. See which introduction sentence loses its support.</p>
-    </div>
-  </article>
-
-  <article class="lab">
-    <figure><svg viewBox="0 0 320 200" role="img" aria-label="Paired A/B reader: two versions side by side, a click marker on the deciding sentence, and a heatmap of where the class clicked">
-      <rect class="w2" width="320" height="14"/><circle class="w" cx="8" cy="7" r="2"/><circle class="w" cx="16" cy="7" r="2"/><circle class="w" cx="24" cy="7" r="2"/><rect class="pp" x="36" y="4" width="110" height="6" rx="3"/>
-      <rect class="card" x="6" y="20" width="150" height="122" rx="2"/><text class="ti" x="10" y="31">VERSION A</text>
-      <rect x="10" y="38" width="140" height="24" fill="url(#txt)"/><rect x="10" y="70" width="140" height="24" fill="url(#txt)"/><rect x="10" y="102" width="140" height="24" fill="url(#txt)"/>
-      <rect class="card" x="164" y="20" width="150" height="122" rx="2"/><text class="ti" x="168" y="31">VERSION B</text>
-      <rect x="168" y="38" width="140" height="24" fill="url(#txt)"/><rect x="168" y="70" width="140" height="24" fill="url(#txt)"/><rect x="168" y="102" width="140" height="24" fill="url(#txt)"/>
-      <circle class="pens" cx="236" cy="77" r="6"/><circle class="pen" cx="236" cy="77" r="2"/><text class="tpen" x="246" y="80">I decided here</text>
-      <text x="6" y="156">WHERE THE CLASS CLICKED</text>
-      <g class="pen"><rect x="6" y="160" width="18" height="8" opacity=".12"/><rect x="25" y="160" width="18" height="8" opacity=".18"/><rect x="44" y="160" width="18" height="8" opacity=".1"/><rect x="63" y="160" width="18" height="8" opacity=".22"/><rect x="82" y="160" width="18" height="8" opacity=".12"/><rect x="101" y="160" width="18" height="8" opacity=".08"/><rect x="120" y="160" width="18" height="8" opacity=".14"/><rect x="139" y="160" width="17" height="8" opacity=".1"/></g>
-      <g class="pen"><rect x="164" y="160" width="18" height="8" opacity=".1"/><rect x="183" y="160" width="18" height="8" opacity=".2"/><rect x="202" y="160" width="18" height="8" opacity=".45"/><rect x="221" y="160" width="18" height="8" opacity=".85"/><rect x="240" y="160" width="18" height="8" opacity=".6"/><rect x="259" y="160" width="18" height="8" opacity=".25"/><rect x="278" y="160" width="18" height="8" opacity=".12"/><rect x="297" y="160" width="17" height="8" opacity=".08"/></g>
-      <text class="ti" x="6" y="186">14 of 19 chose B · most at ¶2, sentence 3</text>
-      <rect class="ik" x="252" y="176" width="62" height="14" rx="2"/><text class="tp" x="268" y="186">reveal</text>
-    </svg></figure>
-    <div class="cap">
-      <div class="meta"><span class="tag">session C</span><span class="tag">build S</span></div>
-      <h3>Paired A/B reader</h3>
-      <p>Two versions of one introduction. Click the sentence where you decided.</p>
-    </div>
-  </article>
-
-  <article class="lab">
-    <figure><svg viewBox="0 0 320 200" role="img" aria-label="Empty LBW tagger: a stacked ratio bar of evidence, claim, filler, and generic sentences; a text block being tagged; a checklist">
-      <rect class="w2" width="320" height="14"/><circle class="w" cx="8" cy="7" r="2"/><circle class="w" cx="16" cy="7" r="2"/><circle class="w" cx="24" cy="7" r="2"/><rect class="pp" x="36" y="4" width="110" height="6" rx="3"/>
-      <rect class="ok" x="6" y="22" width="37" height="10"/><rect class="gp" x="43" y="22" width="55" height="10"/><rect class="w" x="98" y="22" width="139" height="10"/><rect class="hl" x="237" y="22" width="77" height="10"/>
-      <text class="ti" x="6" y="42">E 12%</text><text class="ti" x="43" y="42">C 18%</text><text class="ti" x="98" y="42">F filler 45%</text><text class="ti" x="237" y="42">G generic 25%</text>
-      <g opacity=".35"><rect class="w" x="6" y="54" width="230" height="8" rx="2"/><rect class="hl" x="6" y="66" width="200" height="8" rx="2"/><rect class="w" x="6" y="78" width="240" height="8" rx="2"/><rect class="gp" x="6" y="90" width="180" height="8" rx="2"/><rect class="w" x="6" y="102" width="236" height="8" rx="2"/><rect class="ok" x="6" y="114" width="150" height="8" rx="2"/><rect class="hl" x="6" y="126" width="220" height="8" rx="2"/><rect class="gp" x="6" y="138" width="190" height="8" rx="2"/></g>
-      <rect x="8" y="53" width="226" height="10" fill="url(#txt)"/><rect x="8" y="65" width="196" height="10" fill="url(#txt)"/><rect x="8" y="77" width="236" height="10" fill="url(#txt)"/><rect x="8" y="89" width="176" height="10" fill="url(#txt)"/><rect x="8" y="101" width="232" height="10" fill="url(#txt)"/><rect x="8" y="113" width="146" height="10" fill="url(#txt)"/><rect x="8" y="125" width="216" height="10" fill="url(#txt)"/><rect x="8" y="137" width="186" height="10" fill="url(#txt)"/>
-      <rect class="pens" x="5" y="88" width="182" height="12" rx="2"/>
-      <polygon class="cur" points="120,92 120,104 123,101 126,107 128,106 125,100 129,100"/>
-      <rect class="ok" x="250" y="54" width="64" height="14" rx="2"/><text class="tp" x="254" y="64">E evidence</text>
-      <rect class="gp" x="250" y="72" width="64" height="14" rx="2"/><text class="tp" x="254" y="82">C no evidence</text>
-      <rect class="w" x="250" y="90" width="64" height="14" rx="2"/><text class="tp" x="254" y="100">F filler</text>
-      <rect class="hl" x="250" y="108" width="64" height="14" rx="2"/><text class="ti" x="254" y="118">G generic</text>
-      <rect class="mus" x="6" y="158" width="7" height="7"/><text class="ti" x="18" y="164">could the evaluation fail?</text>
-      <rect class="mus" x="6" y="172" width="7" height="7"/><text class="ti" x="18" y="178">do the numbers trace to a procedure?</text>
-      <rect class="ik" x="6" y="186" width="7" height="7"/><text class="ti" x="18" y="192">3 citations checked · 1 real</text>
-    </svg></figure>
-    <div class="cap">
-      <div class="meta"><span class="tag">session D</span><span class="tag">build M</span></div>
-      <h3>Empty LBW tagger</h3>
-      <p>Tag every sentence of a Claude-written paper about nothing: evidence, claim, filler, generic.</p>
-    </div>
-  </article>
-
-  <article class="lab">
-    <figure><svg viewBox="0 0 320 200" role="img" aria-label="Genre skeleton sketcher: three hand-drawn stacks of section boxes for fabrication, study, and theory papers">
-      <rect class="w2" width="320" height="14"/><circle class="w" cx="8" cy="7" r="2"/><circle class="w" cx="16" cy="7" r="2"/><circle class="w" cx="24" cy="7" r="2"/><rect class="pp" x="36" y="4" width="110" height="6" rx="3"/>
-      <text class="ti" x="18" y="28">FABRICATION</text><text class="ti" x="134" y="28">STUDY</text><text class="ti" x="230" y="28">THEORY</text>
-      <g class="iks">
-        <polygon points="14,34 96,33 97,47 15,48"/><polygon points="15,50 97,49 96,60 14,61"/><polygon points="14,63 96,62 97,92 15,93"/><polygon points="15,95 97,96 96,120 14,121"/><polygon points="14,123 96,122 97,144 15,145"/><polygon points="15,147 97,148 96,159 14,160"/>
-        <polygon points="120,34 202,33 203,47 121,48"/><polygon points="121,50 203,49 202,59 120,60"/><polygon points="120,62 202,63 203,88 121,89"/><polygon points="121,91 203,90 202,124 120,125"/><polygon points="120,127 202,128 203,149 121,150"/>
-        <polygon points="226,34 308,33 309,49 227,50"/><polygon points="227,52 309,51 308,75 226,76"/><polygon points="226,78 308,79 309,102 227,103"/><polygon points="227,105 309,104 308,128 226,129"/><polygon points="226,131 308,132 309,148 227,149"/>
-      </g>
-      <g class="ln" opacity=".7"><polygon points="18,66 100,65 101,90 19,91"/><polygon points="124,94 206,93 205,122 123,123"/><polygon points="230,55 312,54 311,73 229,74"/></g>
-      <text x="18" y="43">intro</text><text x="18" y="57">related</text><text x="18" y="80">technique</text><text x="18" y="110">demos = evidence</text><text x="18" y="136">tech eval</text><text x="18" y="156">disc</text>
-      <text x="124" y="43">intro</text><text x="124" y="57">RQs</text><text x="124" y="78">method</text><text x="124" y="110">results</text><text x="124" y="141">discussion</text>
-      <text x="230" y="44">setup</text><text x="230" y="66">move 1</text><text x="230" y="93">move 2</text><text x="230" y="119">move 3</text><text x="230" y="142">so what</text>
-      <text x="14" y="178">contribution sits in the same place; the middle differs</text>
-      <g transform="translate(284,172) rotate(-40)"><rect class="hl" x="0" y="0" width="30" height="7" rx="1"/><polygon class="ik" points="30,0 37,3.5 30,7"/><rect class="pen" x="-3" y="0" width="3" height="7"/></g>
-      <text x="6" y="192">faint boxes: classmates' drawings, overlaid</text>
-    </svg></figure>
-    <div class="cap">
-      <div class="meta"><span class="tag">session D</span><span class="tag">build M</span></div>
-      <h3>Genre skeleton sketcher</h3>
-      <p>Stack section boxes by page share for your genre. Overlay the room's drawings.</p>
-    </div>
-  </article>
-
-  </div>
-</section>
-
-<!-- ============ GROUP 3: REVIEWING ============ -->
-<section class="group">
-  <div class="grouphead"><h2>Reviewing</h2></div>
-  <div class="grid">
-
-  <article class="lab">
-    <figure><svg viewBox="0 0 320 200" role="img" aria-label="Review prediction sheet: anonymized reviews, a prediction grid of accepted, rebutted, or ignored, and a locked v2 panel">
-      <rect class="w2" width="320" height="14"/><circle class="w" cx="8" cy="7" r="2"/><circle class="w" cx="16" cy="7" r="2"/><circle class="w" cx="24" cy="7" r="2"/><rect class="pp" x="36" y="4" width="110" height="6" rx="3"/>
-      <rect class="card" x="6" y="20" width="112" height="170" rx="2"/><text class="ti" x="10" y="31">REVIEWS · anonymized</text>
-      <text x="10" y="46">Reviewer A · claim</text><rect x="10" y="50" width="104" height="14" fill="url(#txt)"/>
-      <text x="10" y="80">Reviewer A · evidence</text><rect x="10" y="84" width="104" height="14" fill="url(#txt)"/>
-      <text x="10" y="114">Reviewer B · framing</text><rect x="10" y="118" width="104" height="14" fill="url(#txt)"/>
-      <text x="10" y="148">Reviewer C · scope</text><rect x="10" y="152" width="104" height="14" fill="url(#txt)"/>
-      <rect class="card" x="124" y="20" width="92" height="170" rx="2"/><text class="ti" x="128" y="31">YOUR PREDICTION</text>
-      <text x="130" y="44">acc</text><text x="158" y="44">reb</text><text x="186" y="44">ign</text>
-      <circle class="pen" cx="136" cy="57" r="3.5"/><circle class="mus" cx="164" cy="57" r="3.5"/><circle class="mus" cx="192" cy="57" r="3.5"/>
-      <circle class="pen" cx="136" cy="91" r="3.5"/><circle class="mus" cx="164" cy="91" r="3.5"/><circle class="mus" cx="192" cy="91" r="3.5"/>
-      <circle class="mus" cx="136" cy="125" r="3.5"/><circle class="pen" cx="164" cy="125" r="3.5"/><circle class="mus" cx="192" cy="125" r="3.5"/>
-      <circle class="mus" cx="136" cy="159" r="3.5"/><circle class="mus" cx="164" cy="159" r="3.5"/><circle class="pen" cx="192" cy="159" r="3.5"/>
-      <text x="128" y="182">+ what changed?</text>
-      <rect class="card" x="222" y="20" width="92" height="170" rx="2"/><text class="ti" x="226" y="31">v2 + REBUTTAL</text>
-      <path class="mus" d="M260,72 v-8 a8,8 0 0 1 16,0 v8" stroke-width="2.5"/><rect class="w" x="255" y="72" width="26" height="20" rx="3"/>
-      <text x="232" y="106">locked until reveal</text>
-      <g class="faint"><text class="ti" x="234" y="132">✓  ✓  ✗  ✓</text><text class="ti" x="234" y="146">3 / 4 predicted</text><rect x="228" y="154" width="80" height="24" fill="url(#txt)"/></g>
-    </svg></figure>
-    <div class="cap">
-      <div class="meta"><span class="tag">session E</span><span class="tag">build M</span></div>
-      <h3>Review prediction sheet</h3>
-      <p>Predict what a real rejected draft's authors accepted, rebutted, ignored. Then v2 unlocks.</p>
-    </div>
-  </article>
-
-  </div>
-</section>
-
-<!-- ============ GROUP 4: PROJECT + SHARED ============ -->
-<section class="group">
-  <div class="grouphead"><h2>Project and the shared log</h2></div>
-  <div class="grid">
-
-  <article class="lab">
-    <figure><svg viewBox="0 0 320 200" role="img" aria-label="Seed picker and feasibility gate: filter chips, seed cards, and a gate form with an hours calculation and a scope red flag">
-      <rect class="w2" width="320" height="14"/><circle class="w" cx="8" cy="7" r="2"/><circle class="w" cx="16" cy="7" r="2"/><circle class="w" cx="24" cy="7" r="2"/><rect class="pp" x="36" y="4" width="110" height="6" rx="3"/>
-      <rect class="pen" x="6" y="22" width="24" height="12" rx="6"/><text class="tp" x="11" y="31">fab</text>
-      <rect class="w2" x="34" y="22" width="40" height="12" rx="6"/><text x="39" y="31">measure</text>
-      <rect class="w2" x="78" y="22" width="28" height="12" rx="6"/><text x="83" y="31">data</text>
-      <rect class="w2" x="110" y="22" width="36" height="12" rx="6"/><text x="115" y="31">course</text>
-      <rect class="w2" x="150" y="22" width="26" height="12" rx="6"/><text x="155" y="31">tool</text>
-      <rect class="ln" x="180" y="22" width="34" height="12" rx="6" stroke-dasharray="2 1"/><text x="185" y="31">IRB 🔒</text>
-      <g transform="translate(6,44)"><rect class="card" width="146" height="34" rx="2" style="stroke:var(--pen)"/><rect class="ik" x="6" y="7" width="110" height="3" rx="1.5"/><rect x="6" y="14" width="126" height="8" fill="url(#txt)"/><rect class="w2" x="6" y="24" width="18" height="7" rx="2"/><rect class="w2" x="27" y="24" width="30" height="7" rx="2"/></g>
-      <g transform="translate(6,84)"><rect class="card" width="146" height="34" rx="2"/><rect class="ik" x="6" y="7" width="90" height="3" rx="1.5"/><rect x="6" y="14" width="126" height="8" fill="url(#txt)"/><rect class="w2" x="6" y="24" width="18" height="7" rx="2"/><rect class="w2" x="27" y="24" width="38" height="7" rx="2"/></g>
-      <g transform="translate(6,124)"><rect class="card" width="146" height="34" rx="2"/><rect class="ik" x="6" y="7" width="120" height="3" rx="1.5"/><rect x="6" y="14" width="126" height="8" fill="url(#txt)"/><rect class="w2" x="6" y="24" width="18" height="7" rx="2"/><rect class="w2" x="27" y="24" width="24" height="7" rx="2"/></g>
-      <text x="6" y="176">20 seeds · one line + a method hint</text>
-      <rect class="card" x="160" y="44" width="154" height="146" rx="2"/><text class="ti" x="166" y="55">FEASIBILITY GATE</text>
-      <text x="166" y="68">claim the evaluation could fail</text><rect class="ln" x="166" y="71" width="142" height="10" rx="1"/><rect class="ik" x="169" y="75" width="80" height="2.5" rx="1"/>
-      <text x="166" y="94">evidence by midpoint</text><rect class="ln" x="166" y="97" width="142" height="10" rx="1"/><rect class="ik" x="169" y="101" width="104" height="2.5" rx="1"/>
-      <text x="166" y="120">access today</text>
-      <rect class="ok" x="166" y="124" width="14" height="7" rx="3.5"/><circle class="pp" cx="176.5" cy="127.5" r="2.7"/><text x="183" y="130">data</text>
-      <rect class="ok" x="208" y="124" width="14" height="7" rx="3.5"/><circle class="pp" cx="218.5" cy="127.5" r="2.7"/><text x="225" y="130">printer</text>
-      <rect class="gp" x="256" y="124" width="14" height="7" rx="3.5"/><circle class="pp" cx="259.5" cy="127.5" r="2.7"/><text x="273" y="130">people</text>
-      <text class="ti" x="166" y="146">6 h/wk × 9 wk = 54 h · plan 80 h</text>
-      <rect class="gp" x="166" y="151" width="62" height="11" rx="2"/><text class="tp" x="170" y="159">over by 26 h</text>
-      <text x="166" y="176">"…a </text><text class="tpen" x="188" y="176">longitudinal</text><text x="242" y="176"> deployment…"</text>
-      <line class="pens" x1="188" y1="178" x2="240" y2="178"/>
-      <rect class="hl" x="166" y="181" width="52" height="8" rx="2"/><text class="ti" x="169" y="187.5">scope flag</text>
-    </svg></figure>
-    <div class="cap">
-      <div class="meta"><span class="tag">session F</span><span class="tag">build M</span></div>
-      <h3>Seed picker and feasibility gate</h3>
-      <p>Filter seeds by method. The gate does the hours arithmetic and flags scope words.</p>
-    </div>
-  </article>
-
-  <article class="lab">
-    <figure><svg viewBox="0 0 320 200" role="img" aria-label="AI log: a table of asked, claimed, verified, result, and what was done with it; a verification donut; export button">
-      <rect class="w2" width="320" height="14"/><circle class="w" cx="8" cy="7" r="2"/><circle class="w" cx="16" cy="7" r="2"/><circle class="w" cx="24" cy="7" r="2"/><rect class="pp" x="36" y="4" width="110" height="6" rx="3"/>
-      <text class="ti" x="6" y="28">ASKED</text><text class="ti" x="72" y="28">CLAIMED</text><text class="ti" x="138" y="28">VERIFIED</text><text class="ti" x="186" y="28">RESULT</text><text class="ti" x="248" y="28">DID WITH IT</text>
-      <line class="ln" x1="6" y1="32" x2="314" y2="32"/>
-      <rect x="6" y="38" width="60" height="10" fill="url(#txt)"/><rect x="72" y="38" width="60" height="10" fill="url(#txt)"/><text class="ti" x="146" y="46">✓ opened</text><rect class="ok" x="186" y="37" width="52" height="11" rx="2"/><text class="tp" x="190" y="45">correct</text><rect x="248" y="38" width="64" height="10" fill="url(#txt)"/>
-      <rect x="6" y="56" width="60" height="10" fill="url(#txt)"/><rect x="72" y="56" width="60" height="10" fill="url(#txt)"/><text class="ti" x="146" y="64">✓ opened</text><rect class="gp" x="186" y="55" width="52" height="11" rx="2"/><text class="tp" x="190" y="63">wrong</text><rect x="248" y="56" width="64" height="10" fill="url(#txt)"/>
-      <rect x="6" y="74" width="60" height="10" fill="url(#txt)"/><rect x="72" y="74" width="60" height="10" fill="url(#txt)"/><text x="146" y="82">not found</text><rect class="w" x="186" y="73" width="52" height="11" rx="2"/><text class="tp" x="190" y="81">unverifiable</text><rect x="248" y="74" width="64" height="10" fill="url(#txt)"/>
-      <rect x="6" y="92" width="60" height="10" fill="url(#txt)"/><rect x="72" y="92" width="60" height="10" fill="url(#txt)"/><text class="ti" x="146" y="100">✓ opened</text><rect class="ok" x="186" y="91" width="52" height="11" rx="2"/><text class="tp" x="190" y="99">correct</text><rect x="248" y="92" width="64" height="10" fill="url(#txt)"/>
-      <rect x="6" y="110" width="60" height="10" fill="url(#txt)"/><rect x="72" y="110" width="60" height="10" fill="url(#txt)"/><text class="ti" x="146" y="118">✓ opened</text><rect class="gp" x="186" y="109" width="52" height="11" rx="2"/><text class="tp" x="190" y="117">wrong</text><rect x="248" y="110" width="64" height="10" fill="url(#txt)"/>
-      <line class="ln" x1="6" y1="128" x2="314" y2="128"/>
-      <circle class="w2" cx="40" cy="164" r="18" style="fill:none;stroke:var(--wire2);stroke-width:8"/>
-      <circle cx="40" cy="164" r="18" style="fill:none;stroke:var(--ok);stroke-width:8" stroke-dasharray="68 45" transform="rotate(-90 40 164)"/>
-      <text class="ti" x="31" y="167">60%</text><text x="66" y="160">verified correct</text><text x="66" y="172">12 kept · 5 wrong · 3 unverifiable</text>
-      <rect class="ik" x="214" y="156" width="100" height="16" rx="2"/><text class="tp" x="236" y="167">export log.md</text>
-      <text x="6" y="194">every lab appends here · one format · graded for honesty, not cleanliness</text>
-    </svg></figure>
-    <div class="cap">
-      <div class="meta"><span class="tag">every lab</span><span class="tag">build S</span></div>
-      <h3>AI log</h3>
-      <p>Asked, claimed, verified, result, did with it. One format, every lab.</p>
-    </div>
-  </article>
-
-  </div>
-</section>
-
-<!-- ============ SESSION MAP ============ -->
-<section class="map">
-  <div class="grouphead"><h2>Where they land</h2></div>
-  <div class="mapwrap">
-    <div class="sessions">
-      <div class="sess"><div class="eyebrow">Session A</div><h4>Hook papers</h4><span class="chip g-read">Field map canvas</span><span class="chip g-log">AI log opens</span></div>
-      <div class="sess"><div class="eyebrow">Session B</div><h4>Half: the graph</h4><span class="chip g-read">Graph overlay</span><span class="chip g-read">Figure compare</span><span class="chip g-read">Citation drift auditor</span></div>
-      <div class="sess"><div class="eyebrow">Session C</div><h4>A paper is an argument</h4><span class="chip g-struct">Reverse outline builder</span><span class="chip g-struct">Scramble and reassemble</span><span class="chip g-struct">Section ablation</span><span class="chip g-struct">Paired A/B reader</span></div>
-      <div class="sess"><div class="eyebrow">Session D</div><h4>The empty LBW</h4><span class="chip g-struct">Empty LBW tagger</span><span class="chip g-struct">Genre skeleton sketcher</span></div>
-      <div class="sess"><div class="eyebrow">Session E</div><h4>Resubmission</h4><span class="chip g-review">Review prediction sheet</span></div>
-      <div class="sess"><div class="eyebrow">Session F</div><h4>Final project</h4><span class="chip g-proj">Seed picker and gate</span><span class="chip again">Reverse outline, own draft</span><span class="chip again">Prediction sheet, peer review</span></div>
-    </div>
-  </div>
-</section>
-
-<footer><span>Nothing here is built yet.</span></footer>
+<footer><span>MIT CSAIL, HCI Engineering Group · 6.8500 fall 2027</span><span>draft, not yet reviewed by the teaching team</span></footer>
 </div>
 </body>
 </html>

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Working with AI · 6.8500</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Lato:wght@400;700&family=Roboto+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+<div class="wrap">
+<div class="brand"><a href="../index.html">6.8500 <span>AI-Assisted HCI Research</span></a><span class="term">fall 2027 · draft site</span></div>
+<nav class="site" aria-label="Site">
+  <a href="../index.html">Schedule</a>
+  <a href="../project.html">Project</a>
+  <a href="../tools.html">Tools</a>
+  <a href="../guides/index.html" aria-current="page">Guides</a>
+  <a href="../readings.html">Readings</a>
+  <a href="../syllabus.html">Syllabus</a>
+</nav>
+
+<div class="labpage">
+<header class="page"><div class="eyebrow">Guide</div><h1>Working with AI in this course</h1>
+<p class="lede">Use it fully. Log everything. Verify what you keep. Do the first pass by hand.</p></header>
+
+<section><h2>The AI log</h2>
+<p>Every lab, assignment, and the project include a log. One row per substantive exchange.</p>
+<div class="tablewrap"><table class="plain"><thead><tr><th>#</th><th>What I asked</th><th>What it claimed</th><th>Verified? (source opened)</th><th>Result</th><th>What I did with it</th></tr></thead>
+<tbody><tr><td>1</td><td>who disagrees with the hook paper</td><td>named three papers</td><td>opened all three</td><td>one correct, one misattributed, one does not exist</td><td>kept one, dropped two, logged the fake</td></tr></tbody></table></div>
+<p>End with the summary line: <code>kept N · verified correct N · wrong and dropped N · unverifiable and dropped N</code>.</p>
+<p>The log is graded for honesty, not cleanliness. A log that shows the model was confidently wrong and you caught it scores higher than a clean page with no log.</p></section>
+
+<section><h2>Verification</h2>
+<ul>
+<li>Every claim about the literature that you keep, you verified against the source itself, not a summary of it</li>
+<li>A DOI that resolves proves existence and nothing more. Alignment (does the source say that, at that strength) requires opening it</li>
+<li>Could not verify means drop and flag, never keep</li>
+<li>Do the first reverse outline and the first reading receipt by hand. Then ask the model and compare</li>
+</ul></section>
+
+<section><h2>Disclosure</h2>
+<ul>
+<li>Follow the <a href="https://www.acm.org/publications/policies/frequently-asked-questions">ACM policy on generative AI</a>: disclose use in the paper; you are responsible for every word and citation</li>
+<li>Your final paper's AI log states which parts had AI involvement and at what level: idea, structure, prose, code, figures</li>
+<li>Review packets used in class are confidential to the class. Do not paste them into any external tool</li>
+</ul></section>
+
+<section><h2>Cost and model habits</h2>
+<ul>
+<li>You have $30 a month of Parley API credit and a separate chat quota. Interactive calls are effectively free; agent loops on Opus can burn the month in one session</li>
+<li>Default to Haiku or Llama for bulk, Sonnet on request, Opus never by default. Use plan mode before executing</li>
+<li>Check spend on the Parley dashboard or the budget counter before and after any agentic session</li>
+<li>Convert PDFs and slides to markdown before feeding them to a model; it is far cheaper in tokens</li>
+<li>Keep a global <code>CLAUDE.md</code> with your writing rules (no em-dashes, no AI-sounding patterns) so every session inherits them</li>
+<li>Keys live in your shell environment or <code>~/.claude/settings.json</code>, never in a repo or a shared file</li>
+</ul></section>
+</div>
+
+<footer><span>MIT CSAIL, HCI Engineering Group · 6.8500 fall 2027</span><span>draft, not yet reviewed by the teaching team</span></footer>
+</div>
+</body>
+</html>
