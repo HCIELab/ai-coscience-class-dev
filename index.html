@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow">
 <title>Writing Track Labs</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Lato:wght@400;700&family=Roboto+Mono:wght@400;500&display=swap">
 <link rel="stylesheet" href="assets/css/site.css">
 </head>
 <body>
@@ -28,15 +28,15 @@
 
 <header class="top">
   <div>
-    <div class="eyebrow">Proposal · GenAI in HCI Research · Fall 2027</div>
+    <div class="eyebrow">GenAI in HCI Research · Fall 2027 · draft</div>
     <h1 style="margin-top:10px">Labs students run in the browser</h1>
-    <p class="lede">Thirteen ideas for the research and writing track. <b>Each is one HTML page</b>, opened in class, finished in 20 to 45 minutes, no server. Pick the ones worth building.</p>
+    <p class="lede">Thirteen browser labs for the research and writing track. One HTML page each, 20 to 45 minutes in class.</p>
     <div class="legend">
       <span><i class="sw" style="background:var(--tint-read)"></i>reading a field</span>
       <span><i class="sw" style="background:var(--tint-struct)"></i>paper structure</span>
       <span><i class="sw" style="background:var(--tint-review)"></i>reviewing</span>
       <span><i class="sw" style="background:var(--tint-proj)"></i>project</span>
-      <span class="mono" style="font-size:11.5px">build S = afternoon · M = weekend · L = week</span>
+      <span class="key">build: S afternoon · M weekend · L week</span>
     </div>
   </div>
   <svg class="flow" viewBox="0 0 560 150" role="img" aria-label="Flow: one hook paper feeds the field labs, then structure labs, a review lab, and the LBW project; the AI log runs under all of them">
@@ -83,7 +83,7 @@
 
 <!-- ============ GROUP 1: READING A FIELD ============ -->
 <section class="group">
-  <div class="grouphead"><h2>Reading a field</h2><span class="count">4 labs · same hook paper throughout</span></div>
+  <div class="grouphead"><h2>Reading a field</h2></div>
   <div class="grid">
 
   <article class="lab">
@@ -108,10 +108,9 @@
       <text x="30" y="197">2010</text><text x="136" y="197">2016 hook</text><text x="270" y="197">2026</text>
     </svg></figure>
     <div class="cap">
-      <div class="meta"><span class="tag g-read">reading</span><span class="tag">session A → due wk+1</span><span class="tag">homework</span><span class="tag">build M</span></div>
+      <div class="meta"><span class="tag">session A</span><span class="tag">build M</span></div>
       <h3>Field map canvas</h3>
-      <p><b>Students</b> drag paper cards into before / disagrees / after / why-attention, on a timeline.</p>
-      <p><b>Reveals</b> empty quadrants at a glance; Claude's picks overlay in blue.</p>
+      <p>Drag paper cards into before, disagrees, after, why. Empty quadrants show at a glance.</p>
     </div>
   </article>
 
@@ -135,10 +134,9 @@
       <rect class="w" x="80" y="186" width="7" height="7"/><text x="91" y="192">unread</text>
     </svg></figure>
     <div class="cap">
-      <div class="meta"><span class="tag g-read">reading</span><span class="tag">session B</span><span class="tag">40 min</span><span class="tag">build M</span></div>
+      <div class="meta"><span class="tag">session B</span><span class="tag">build M</span></div>
       <h3>Graph overlay</h3>
-      <p><b>Students</b> circle clusters on a Connected Papers export and mark: in my map, gap, Claude's ten.</p>
-      <p><b>Reveals</b> Claude's ten all sit in the center cluster; the faction is unread.</p>
+      <p>Circle clusters on the citation graph. Mark what you read, what you missed, what Claude picked.</p>
     </div>
   </article>
 
@@ -161,10 +159,9 @@
       <rect class="ik" x="164" y="170" width="150" height="18" rx="2"/><text class="tp" x="196" y="182">add row to audit table</text>
     </svg></figure>
     <div class="cap">
-      <div class="meta"><span class="tag g-read">reading</span><span class="tag">assignment 3</span><span class="tag">homework</span><span class="tag">build M</span></div>
+      <div class="meta"><span class="tag">assignment 3</span><span class="tag">build M</span></div>
       <h3>Citation drift auditor</h3>
-      <p><b>Students</b> put the source passage beside each citing sentence; set three lights and a drift type.</p>
-      <p><b>Reveals</b> drift is mostly strength inflation; Claude's citations fail "exists," humans fail "aligns."</p>
+      <p>Source passage beside each citing sentence. Three lights: exists, metadata, aligns.</p>
     </div>
   </article>
 
@@ -185,10 +182,9 @@
       <rect x="8" y="174" width="90" height="10" fill="url(#txt)"/><rect x="120" y="174" width="110" height="10" fill="url(#txt)"/><rect class="w2" x="244" y="173" width="54" height="11" rx="2"/><text class="ti" x="248" y="181">caption typo</text>
     </svg></figure>
     <div class="cap">
-      <div class="meta"><span class="tag g-read">reading</span><span class="tag">assignment 2</span><span class="tag">homework</span><span class="tag">build S</span></div>
+      <div class="meta"><span class="tag">assignment 2</span><span class="tag">build S</span></div>
       <h3>Figure compare</h3>
-      <p><b>Students</b> upload original and reproduction, slide to compare, log every discrepancy with a hypothesis.</p>
-      <p><b>Reveals</b> the silent choices the AI made in the code; grades the explained 80% over the unexplained 100%.</p>
+      <p>Original beside your reproduction. Every discrepancy gets a hypothesis.</p>
     </div>
   </article>
 
@@ -197,7 +193,7 @@
 
 <!-- ============ GROUP 2: PAPER STRUCTURE ============ -->
 <section class="group">
-  <div class="grouphead"><h2>Paper structure</h2><span class="count">6 labs · a paper is an argument, not a chronology</span></div>
+  <div class="grouphead"><h2>Paper structure</h2></div>
   <div class="grid">
 
   <article class="lab">
@@ -223,10 +219,9 @@
       <text x="202" y="184">5 of 7 placed · 2 swaps</text>
     </svg></figure>
     <div class="cap">
-      <div class="meta"><span class="tag g-struct">structure</span><span class="tag">session C</span><span class="tag">25 min</span><span class="tag">build S</span></div>
+      <div class="meta"><span class="tag">session C</span><span class="tag">build S</span></div>
       <h3>Scramble and reassemble</h3>
-      <p><b>Students</b> drag shuffled paragraphs into order and name the signal behind each move.</p>
-      <p><b>Reveals</b> which paragraphs the whole room misplaces; the signals they used are the ones their drafts lack.</p>
+      <p>Drag shuffled paragraphs back into order. Name the signal behind each move.</p>
     </div>
   </article>
 
@@ -253,10 +248,9 @@
       <rect class="w" x="160" y="180" width="22" height="10" rx="5"/><circle class="pp" cx="165" cy="185" r="4"/><text x="188" y="188">compare with Claude's outline</text>
     </svg></figure>
     <div class="cap">
-      <div class="meta"><span class="tag g-struct">structure</span><span class="tag">session C, then own draft</span><span class="tag">30 min</span><span class="tag">build M</span></div>
+      <div class="meta"><span class="tag">session C</span><span class="tag">build M</span></div>
       <h3>Reverse outline builder</h3>
-      <p><b>Students</b> type one sentence per paragraph beside the paper, then draw which depends on which.</p>
-      <p><b>Reveals</b> orphans and the contribution sentence; on their own draft, every "then we did" line.</p>
+      <p>One sentence per paragraph, then arrows. Orphans and the contribution sentence surface.</p>
     </div>
   </article>
 
@@ -281,10 +275,9 @@
       <text x="6" y="190">Related work held up: the novelty claim, ¶2 s3</text>
     </svg></figure>
     <div class="cap">
-      <div class="meta"><span class="tag g-struct">structure</span><span class="tag">session C</span><span class="tag">20 min</span><span class="tag">build S</span></div>
+      <div class="meta"><span class="tag">session C</span><span class="tag">build S</span></div>
       <h3>Section ablation</h3>
-      <p><b>Students</b> switch a section off and watch which introduction sentence loses its support.</p>
-      <p><b>Reveals</b> related work is not background; it is the evidence for one sentence. Discussion often holds up nothing.</p>
+      <p>Switch a section off. See which introduction sentence loses its support.</p>
     </div>
   </article>
 
@@ -303,10 +296,9 @@
       <rect class="ik" x="252" y="176" width="62" height="14" rx="2"/><text class="tp" x="268" y="186">reveal</text>
     </svg></figure>
     <div class="cap">
-      <div class="meta"><span class="tag g-struct">structure</span><span class="tag">session C</span><span class="tag">20 min</span><span class="tag">build S</span></div>
+      <div class="meta"><span class="tag">session C</span><span class="tag">build S</span></div>
       <h3>Paired A/B reader</h3>
-      <p><b>Students</b> read two versions of one introduction and click the sentence where they decided.</p>
-      <p><b>Reveals</b> a class heatmap: the decision lands on the same sentence for most readers. Used once; the real pair comes in session E.</p>
+      <p>Two versions of one introduction. Click the sentence where you decided.</p>
     </div>
   </article>
 
@@ -328,10 +320,9 @@
       <rect class="ik" x="6" y="186" width="7" height="7"/><text class="ti" x="18" y="192">3 citations checked · 1 real</text>
     </svg></figure>
     <div class="cap">
-      <div class="meta"><span class="tag g-struct">structure</span><span class="tag">session D</span><span class="tag">45 min</span><span class="tag">build M</span></div>
+      <div class="meta"><span class="tag">session D</span><span class="tag">build M</span></div>
       <h3>Empty LBW tagger</h3>
-      <p><b>Students</b> paste a Claude-written paper about nothing and tag every sentence E / C / F / G.</p>
-      <p><b>Reveals</b> a perfect skeleton with almost no E. Structure is a container; Claude fills it with air.</p>
+      <p>Tag every sentence of a Claude-written paper about nothing: evidence, claim, filler, generic.</p>
     </div>
   </article>
 
@@ -353,10 +344,9 @@
       <text x="6" y="192">faint boxes: classmates' drawings, overlaid</text>
     </svg></figure>
     <div class="cap">
-      <div class="meta"><span class="tag g-struct">structure</span><span class="tag">session D</span><span class="tag">40 min</span><span class="tag">build M</span></div>
+      <div class="meta"><span class="tag">session D</span><span class="tag">build M</span></div>
       <h3>Genre skeleton sketcher</h3>
-      <p><b>Students</b> stack section boxes sized by page share for their genre, then overlay the room's drawings.</p>
-      <p><b>Reveals</b> three different middles under one shared frame; stops the hunt for a universal template.</p>
+      <p>Stack section boxes by page share for your genre. Overlay the room's drawings.</p>
     </div>
   </article>
 
@@ -365,7 +355,7 @@
 
 <!-- ============ GROUP 3: REVIEWING ============ -->
 <section class="group">
-  <div class="grouphead"><h2>Reviewing</h2><span class="count">1 lab · hostile review with ground truth</span></div>
+  <div class="grouphead"><h2>Reviewing</h2></div>
   <div class="grid">
 
   <article class="lab">
@@ -389,10 +379,9 @@
       <g class="faint"><text class="ti" x="234" y="132">✓  ✓  ✗  ✓</text><text class="ti" x="234" y="146">3 / 4 predicted</text><rect x="228" y="154" width="80" height="24" fill="url(#txt)"/></g>
     </svg></figure>
     <div class="cap">
-      <div class="meta"><span class="tag g-review">reviewing</span><span class="tag">session E</span><span class="tag">75 min</span><span class="tag">build M</span></div>
+      <div class="meta"><span class="tag">session E</span><span class="tag">build M</span></div>
       <h3>Review prediction sheet</h3>
-      <p><b>Students</b> triage a real rejected draft's reviews and predict accepted / rebutted / ignored, then the accepted version unlocks.</p>
-      <p><b>Reveals</b> which point decided the outcome, and which critiques the author argued and won. Graded on the diagnosis.</p>
+      <p>Predict what a real rejected draft's authors accepted, rebutted, ignored. Then v2 unlocks.</p>
     </div>
   </article>
 
@@ -401,7 +390,7 @@
 
 <!-- ============ GROUP 4: PROJECT + SHARED ============ -->
 <section class="group">
-  <div class="grouphead"><h2>Project, and the one thing every lab shares</h2><span class="count">2 labs</span></div>
+  <div class="grouphead"><h2>Project and the shared log</h2></div>
   <div class="grid">
 
   <article class="lab">
@@ -431,10 +420,9 @@
       <rect class="hl" x="166" y="181" width="52" height="8" rx="2"/><text class="ti" x="169" y="187.5">scope flag</text>
     </svg></figure>
     <div class="cap">
-      <div class="meta"><span class="tag g-proj">project</span><span class="tag">session F</span><span class="tag">homework</span><span class="tag">build M</span></div>
+      <div class="meta"><span class="tag">session F</span><span class="tag">build M</span></div>
       <h3>Seed picker and feasibility gate</h3>
-      <p><b>Students</b> filter seeds by method type, then fill a gate that does the hours arithmetic and flags scope words.</p>
-      <p><b>Reveals</b> the two-year study before it is proposed. IRB-gated seeds stay locked unless coverage exists.</p>
+      <p>Filter seeds by method. The gate does the hours arithmetic and flags scope words.</p>
     </div>
   </article>
 
@@ -456,10 +444,9 @@
       <text x="6" y="194">every lab appends here · one format · graded for honesty, not cleanliness</text>
     </svg></figure>
     <div class="cap">
-      <div class="meta"><span class="tag g-log">shared</span><span class="tag">every lab</span><span class="tag">always on</span><span class="tag">build S</span></div>
+      <div class="meta"><span class="tag">every lab</span><span class="tag">build S</span></div>
       <h3>AI log</h3>
-      <p><b>Students</b> record each exchange: asked, claimed, verified, result, what they did with it. One format everywhere.</p>
-      <p><b>Reveals</b> judgment. A messy log that caught Claude being wrong beats a clean map with no log.</p>
+      <p>Asked, claimed, verified, result, did with it. One format, every lab.</p>
     </div>
   </article>
 
@@ -468,7 +455,7 @@
 
 <!-- ============ SESSION MAP ============ -->
 <section class="map">
-  <div class="grouphead"><h2>Where they land</h2><span class="count">six sessions, first half of term</span></div>
+  <div class="grouphead"><h2>Where they land</h2></div>
   <div class="mapwrap">
     <div class="sessions">
       <div class="sess"><div class="eyebrow">Session A</div><h4>Hook papers</h4><span class="chip g-read">Field map canvas</span><span class="chip g-log">AI log opens</span></div>
@@ -481,11 +468,7 @@
   </div>
 </section>
 
-<footer>
-  <span>No server: one HTML file per lab, state in the browser, export to markdown.</span>
-  <span>Claude comparisons call Parley from the page with the class key, or students paste output in.</span>
-  <span>Nothing here is built yet. That is the ask.</span>
-</footer>
+<footer><span>Nothing here is built yet.</span></footer>
 </div>
 </body>
 </html>
