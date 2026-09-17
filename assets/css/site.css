@@ -131,11 +131,21 @@ table.sched tbody th{width:118px;font-weight:400}
 table.sched .wk{display:block;font-family:'Lato',sans-serif;font-size:20px;line-height:1;color:var(--ink)}
 table.sched .dates{display:block;font-size:12px;color:var(--muted);margin-top:4px}
 table.sched .note{display:block;font-size:11px;color:var(--pen);margin-top:4px}
-table.sched td.draft{color:var(--muted);font-style:italic}
-table.sched td.draft b{font-weight:500;color:var(--ink)}
 table.sched tr.now td,table.sched tr.now th{background:#fbf7f6}
 table.sched a{color:var(--ink)} table.sched a:hover{color:var(--hover)}
 .legendline{font-size:12px;color:var(--muted);margin-top:10px}
 .draft-key{font-style:italic}
 @media (max-width:760px){table.sched th{width:90px}}
 .labpage header.page{border-bottom:0;padding-bottom:6px}
+table.sched thead th small{display:block;font-size:10px;letter-spacing:.04em;text-transform:none;color:var(--muted);font-weight:400;margin-top:2px}
+
+/* layered schedule cells */
+table.sched .t{display:block;font-weight:500;color:var(--ink);line-height:1.35}
+table.sched .t+.t{margin-top:6px}
+table.sched .d{display:block;font-size:12px;color:var(--muted);margin-top:2px;line-height:1.4}
+table.sched .c{display:block;font-size:11px;color:var(--pen);margin-top:4px;line-height:1.35}
+.legendline .c-key{color:var(--pen)}
+.draft-key{font-style:normal}
+details.further{border:1px solid var(--line);border-radius:3px;padding:8px 14px;background:#fafafa}
+details.further summary{cursor:pointer;font-family:'Lato',sans-serif;font-size:15px;padding:4px 0}
+details.further h3{font-size:14px;margin:14px 0 4px}

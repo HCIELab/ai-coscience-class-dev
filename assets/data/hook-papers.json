@@ -1,0 +1,286 @@
+[
+ {
+  "id": "W3094504160",
+  "doi": "10.1145/3379337.3415863",
+  "title": "Programmable Filament: Printed Filaments for Multi-material 3D Printing",
+  "authors": [
+   "Haruki Takahashi",
+   "Parinya Punpongsanon",
+   "Jeeeun Kim"
+  ],
+  "year": 2020,
+  "venue": "UIST 2020",
+  "area": "Fabrication machines and process",
+  "award": "Honorable Mention",
+  "thumb": "assets/img/seeds/W3094504160.png"
+ },
+ {
+  "id": "W4396827187",
+  "doi": "10.1145/3613904.3642361",
+  "title": "Throwing Out Conventions: Reimagining Craft-Centered CNC Tool Design through the Digital Pottery Wheel",
+  "authors": [
+   "Ilan Moyer",
+   "Samuelle Bourgault",
+   "Devon Frost",
+   "Jennifer Jacobs"
+  ],
+  "year": 2024,
+  "venue": "CHI 2024",
+  "area": "Craft-centered machine design",
+  "award": "Best Paper",
+  "thumb": null
+ },
+ {
+  "id": "W3207363374",
+  "doi": "10.1145/3472749.3474799",
+  "title": "Roadkill: Nesting Laser-Cut Objects for Fast Assembly",
+  "authors": [
+   "Muhammad Abdullah",
+   "Romeo Sommerfeld",
+   "Laurenz Seidel",
+   "Jonas Noack",
+   "Ran Zhang",
+   "Thijs Roumen",
+   "Patrick Baudisch"
+  ],
+  "year": 2021,
+  "venue": "UIST 2021",
+  "area": "Laser cutting and assembly",
+  "award": "Honorable Mention",
+  "thumb": "assets/img/seeds/W3207363374.png"
+ },
+ {
+  "id": "W4366550055",
+  "doi": "10.1145/3544548.3580745",
+  "title": "CoilCAM: Enabling Parametric Design for Clay 3D Printing Through an Action-Oriented Toolpath Programming System",
+  "authors": [
+   "Samuelle Bourgault",
+   "Pilar Wiley",
+   "Avi Farber",
+   "Jennifer Jacobs"
+  ],
+  "year": 2023,
+  "venue": "CHI 2023",
+  "area": "Computational design tools",
+  "award": "Honorable Mention",
+  "thumb": "assets/img/seeds/W4366550055.png"
+ },
+ {
+  "id": "W3162979071",
+  "doi": "10.1145/3411764.3445422",
+  "title": "Coupling Simulation and Hardware for Interactive Circuit Debugging",
+  "authors": [
+   "Evan Strasnick",
+   "Maneesh Agrawala",
+   "Sean Follmer"
+  ],
+  "year": 2021,
+  "venue": "CHI 2021",
+  "area": "Electronics prototyping",
+  "award": "Best Paper",
+  "thumb": "assets/img/seeds/W3162979071.png"
+ },
+ {
+  "id": "W2795881398",
+  "doi": "10.1145/3173574.3173756",
+  "title": "Off-Line Sensing",
+  "authors": [
+   "Martin Schmitz",
+   "Martin Herbers",
+   "Niloofar Dezfuli",
+   "Sebastian Günther",
+   "Max Mühlhäuser"
+  ],
+  "year": 2018,
+  "venue": "CHI 2018",
+  "area": "Sensing in printed objects",
+  "award": "Honorable Mention",
+  "thumb": "assets/img/seeds/W2795881398.png"
+ },
+ {
+  "id": "W2980380455",
+  "doi": "10.22028/d291-30538",
+  "title": "Soft Inkjet Circuits: Rapid Multi-Material Fabrication of Soft Circuits using a Commodity Inkjet Printer",
+  "authors": [
+   "Arshad Khan",
+   "Joan Sol Roo",
+   "Tobias Kraus",
+   "Jürgen Steimle"
+  ],
+  "year": 2019,
+  "venue": "UIST 2019",
+  "area": "Printed and flexible electronics",
+  "award": "Best Paper",
+  "thumb": "assets/img/seeds/W2980380455.png"
+ },
+ {
+  "id": "W4409735449",
+  "doi": "10.1145/3706598.3714031",
+  "title": "ColdGlass: Full-Color Desktop 3D Printing in Glass",
+  "authors": [
+   "Camila Friedman-Gerlicz",
+   "Jaime Gould",
+   "Fiona Bell",
+   "Leah Buechley"
+  ],
+  "year": 2025,
+  "venue": "CHI 2025",
+  "area": "Fabricated optics and displays",
+  "award": "Honorable Mention",
+  "thumb": null
+ },
+ {
+  "id": "W4409736007",
+  "doi": "10.1145/3706598.3714282",
+  "title": "Xstrings: 3D Printing Cable-Driven Mechanism for Actuation, Deformation, and Manipulation",
+  "authors": [
+   "Jiaji Li",
+   "Shuyue Feng",
+   "Maxine Perroni-Scharf",
+   "Yujia Liu",
+   "Emily Guan",
+   "Guanyun Wang",
+   "Stefanie Mueller"
+  ],
+  "year": 2025,
+  "venue": "CHI 2025",
+  "area": "Metamaterials and mechanisms",
+  "award": "Honorable Mention",
+  "thumb": "assets/img/seeds/W4409736007.png"
+ },
+ {
+  "id": "W4409749518",
+  "doi": "10.1145/3706598.3714304",
+  "title": "TH-Wood: Developing Thermo-Hygro-Coordinating Driven Wood Actuators to Enhance Human-Nature Interaction",
+  "authors": [
+   "Guanyun Wang",
+   "Chuang Chen",
+   "Xiao Jin",
+   "Yulu Chen",
+   "Y Zheng",
+   "Qianzi Zhen",
+   "Yang Zhang",
+   "Jiaji Li"
+  ],
+  "year": 2025,
+  "venue": "CHI 2025",
+  "area": "Shape change and 4D printing",
+  "award": "Honorable Mention",
+  "thumb": null
+ },
+ {
+  "id": "W4409749376",
+  "doi": "10.1145/3706598.3713156",
+  "title": "LivingLoom: Investigating Human-Plant Symbiosis Through Integrating Living Plants Into (E-)Textiles",
+  "authors": [
+   "Jingwen Zhu",
+   "S. F. Chang",
+   "Ruth Zhao",
+   "Hsin-Liu Kao"
+  ],
+  "year": 2025,
+  "venue": "CHI 2025",
+  "area": "Knit and textile fabrication",
+  "award": "Best Paper",
+  "thumb": "assets/img/seeds/W4409749376.png"
+ },
+ {
+  "id": "W3048885648",
+  "doi": "10.1145/3388534.3407296",
+  "title": "Photo-Chromeleon: Re-Programmable Multi-Color Textures Using Photochromic Dyes",
+  "authors": [
+   "Yuhua Jin",
+   "Isabel P. S. Qamar",
+   "Michael Wessely",
+   "Stefanie Mueller"
+  ],
+  "year": 2020,
+  "venue": "UIST 2019",
+  "area": "Appearance and surface",
+  "award": "Best Paper, plus Best Talk",
+  "thumb": "assets/img/seeds/W3048885648.png"
+ },
+ {
+  "id": "W4409736176",
+  "doi": "10.1145/3706598.3714080",
+  "title": "Enabling Recycling of Multi-Material 3D Printed Objects through Computational Design and Disassembly by Dissolution",
+  "authors": [
+   "Xin Wen",
+   "S. Sandra Bae",
+   "Michael L. Rivera"
+  ],
+  "year": 2025,
+  "venue": "CHI 2025",
+  "area": "Sustainable fabrication",
+  "award": "Best Paper",
+  "thumb": null
+ },
+ {
+  "id": "W3031927435",
+  "doi": "10.1145/3313831.3376470",
+  "title": "Wireality: Enabling Complex Tangible Geometries in Virtual Reality with Worn Multi-String Haptics",
+  "authors": [
+   "Cathy Mengying Fang",
+   "Yang Zhang",
+   "Matthew Dworman",
+   "Chris Harrison"
+  ],
+  "year": 2020,
+  "venue": "CHI 2020",
+  "area": "Fabricated haptics",
+  "award": "Best Paper",
+  "thumb": null
+ },
+ {
+  "id": "W2941482178",
+  "doi": "10.1145/3290605.3300544",
+  "title": "\"Occupational Therapy is Making\": Clinical Rapid Prototyping and Digital Fabrication",
+  "authors": [
+   "Megan Hofmann",
+   "Kristin Williams",
+   "Toni Kaplan",
+   "Stephanie Valencia",
+   "Gabriella Han",
+   "Scott E. Hudson",
+   "Jennifer Mankoff",
+   "Patrick Carrington"
+  ],
+  "year": 2019,
+  "venue": "CHI 2019",
+  "area": "Fabrication for accessibility",
+  "award": "Best Paper",
+  "thumb": "assets/img/seeds/W2941482178.png"
+ },
+ {
+  "id": "W4322831995",
+  "doi": "10.1145/3544548.3580999",
+  "title": "Exploring Challenges and Opportunities to Support Designers in Learning to Co-create with AI-based Manufacturing Design Tools",
+  "authors": [
+   "Frederic Gmeiner",
+   "Humphrey Yang",
+   "Lining Yao",
+   "Kenneth Holstein",
+   "Nikolas Martelaro"
+  ],
+  "year": 2023,
+  "venue": "CHI 2023",
+  "area": "Fabrication and generative AI",
+  "award": "Honorable Mention",
+  "thumb": "assets/img/seeds/W4322831995.png"
+ },
+ {
+  "id": "W4409735446",
+  "doi": "10.1145/3706598.3713354",
+  "title": "It's Not the Shape, It's the Settings: Tools for Exploring, Documenting, and Sharing Physical Fabrication Parameters in 3D Printing",
+  "authors": [
+   "Blair Subbaraman",
+   "Nathaneal Bursch",
+   "Nadya Peek"
+  ],
+  "year": 2025,
+  "venue": "CHI 2025",
+  "area": "Fabrication practice",
+  "award": "Honorable Mention",
+  "thumb": null
+ }
+]

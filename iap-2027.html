@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>IAP 2027 proposal · Research with AI</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Lato:wght@400;700&family=Roboto+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/css/site.css">
+<style>
+/* form-shaped layout, this page only */
+.form{margin-top:8px}
+.field{display:grid;grid-template-columns:220px minmax(0,1fr);gap:8px 28px;padding:20px 0;border-top:1px solid var(--line)}
+.field:first-child{border-top:0}
+.field .label{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:500;padding-top:12px}
+.field .label b{display:block;color:var(--ink);font-size:12px;margin-bottom:6px}
+.field .label .req{color:var(--pen)}
+.field .formhint{font-size:12px;color:var(--muted);margin:0 0 8px;font-style:italic}
+.answer{border:1px solid var(--line);border-radius:3px;background:#fafafa;padding:12px 14px;font-size:14px;line-height:1.55;position:relative}
+.answer p{margin:0} .answer p+p{margin-top:6px}
+.answer ul{margin:0;padding-left:20px} .answer li{margin:4px 0}
+.answer.short{max-width:34em}
+.answer.num{font-family:'Roboto Mono',Menlo,Consolas,monospace;font-size:13px}
+.copy{position:absolute;top:8px;right:8px;font-size:10px;letter-spacing:.08em;text-transform:uppercase;border:1px solid var(--line);border-radius:2px;background:var(--paper);color:var(--muted);padding:3px 8px;cursor:pointer;font-family:inherit}
+.copy:hover{color:var(--hover);border-color:var(--hover)}
+.answer.hascopy{padding-right:70px}
+.upload{border:1px dashed var(--wire);border-radius:3px;padding:10px 14px;font-size:13px;color:var(--muted);background:var(--paper);margin-bottom:14px}
+.syll{border:1px solid var(--line);border-radius:3px;padding:16px 18px 6px;background:var(--paper)}
+.syll h3{margin:18px 0 8px;font-size:16px} .syll h3:first-child{margin-top:0}
+.syll p{margin:6px 0;font-size:13.5px} .syll ul{padding-left:20px;font-size:13.5px} .syll li{margin:4px 0}
+.numrow{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;margin-bottom:12px}
+.numrow .answer{padding-right:14px}
+.numrow .k{display:block;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.meta-top{display:flex;flex-wrap:wrap;gap:6px 26px;font-size:13px;color:var(--muted);margin-top:10px}
+.meta-top b{color:var(--ink);font-weight:500}
+@media (max-width:760px){.field{grid-template-columns:1fr}.field .label{padding-top:0}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="brand"><a href="index.html">6.8500 <span>AI-Assisted HCI Research</span></a><span class="term">iap 2027 · proposal draft</span></div>
+<nav class="site" aria-label="Site">
+  <a href="index.html">Schedule</a>
+  <a href="project.html">Project</a>
+  <a href="tools.html">Activities</a>
+  <a href="guides/index.html">Guides</a>
+  <a href="readings.html">Readings</a>
+  <a href="syllabus.html">Syllabus</a>
+</nav>
+
+<header class="page">
+<div class="eyebrow">MIT EECS · Proposal for IAP subject (IAP 2027)</div>
+<h1>Research with AI: Map a Field, Audit the Model, Build the Skill</h1>
+<div class="meta-top">
+  <span><b>Deadline</b> 2026-10-06 23:59</span>
+  <span><b>Proposer</b> Yunyi Zhu, yunyizhu@mit.edu, G, 6-D</span>
+  <span><b>Status</b> draft, not submitted</span>
+</div>
+<p class="lede">Laid out in the order of the EECS proposal form. Each box is the text for that field; the copy button takes it as plain text. Grey italics under a label are the form's own instructions.</p>
+</header>
+
+<div class="callout"><b>Note</b>The proposer must be the course leader and principal lecturer. For-credit subjects use P/D/F only and need a confirmed EECS faculty or lecturer sponsor by the deadline. Funding is contingent on 10 or more enrolled. This page is unlisted; the proposal is not yet approved.</div>
+
+<div class="form">
+
+<div class="field">
+  <div class="label"><b>Subject Name</b></div>
+  <div>
+    <div class="answer short hascopy"><button class="copy" data-copy>copy</button><p>Research with AI: Map a Field, Audit the Model, Build the Skill</p></div>
+    <p class="muted" style="font-size:12px;margin:8px 0 0">Alternatives: "AI for Your Own Research: From a Hook Paper to a Skill That Does the Grunt Work" · "Build the Research Skill Your Field Is Missing"</p>
+  </div>
+</div>
+
+<div class="field">
+  <div class="label"><b>Description</b></div>
+  <div>
+    <p class="formhint">Please provide a brief catalog description: topics covered, background required, types of assignments, etc.</p>
+    <div class="answer hascopy"><button class="copy" data-copy>copy</button>
+    <p>Six two-hour sessions on doing research with AI without being misled by it, ending in a tool you will keep using. In the first half you carry one well-cited paper from your own field through a field map, a citation graph in the browser that flags references that do not exist, and an audit of how later papers cite it against what it actually says. Every exchange with a model goes in an AI log graded for honesty. In the second half you turn one repeated task from your own research workflow into a Claude Code skill: instructions that encode your method, tested against ten cases you judged by hand, with the failure rate on the first line of the report and the cost per run logged. Students with Python go further: the skill calls a script at a model you choose, or becomes a one-page visualizer over your corpus. Ends with a demo day. Background: has read peer-reviewed papers in some field; no programming needed for the skill track. Uses MIT's Parley gateway. P/D/F on six checkoffs and a demo. A preview of 6.8500 AI-Assisted HCI Research (fall 2027).</p>
+    </div>
+  </div>
+</div>
+
+<div class="field">
+  <div class="label"><b>Syllabus</b> (PDF file)</div>
+  <div>
+    <p class="formhint">If you have a PDF version of the proposed course syllabus, please upload it here.</p>
+    <div class="upload">Attach as PDF. The syllabus content is below; export this block.</div>
+    <div class="syll">
+      <h3>Format</h3>
+      <p>Six sessions, Tuesdays and Thursdays, 1 to 3 pm. Each is 25 minutes of concepts, 75 minutes of hands-on work, 20 minutes of checkoff. A worktime slot and a demo day in week 4. Every session appends to the student's AI log (asked, claimed, verified, result, did with it). The first three sessions produce the task the student will automate and the ten hand-judged cases it is tested against.</p>
+      <h3>Sessions</h3>
+      <div class="tablewrap"><table class="plain"><thead><tr><th>#</th><th>Date</th><th>Session</th><th>In class</th><th>Checkoff</th></tr></thead><tbody>
+      <tr><td>1</td><td>Tue Jan 5</td><td><b>Contextualize, not critique</b></td><td>Set up Parley and Claude Code; start the AI log. Pick a hook paper from your field (5 to 15 years old, well cited, not your own). Three-pass read. Ask the model the four questions cold: what came before, what disagrees, what came after, why attention. Log what it claims</td><td>hook paper claimed, DOI resolves; one working call through the gateway; three log rows; first-pass paragraph</td></tr>
+      <tr><td>2</td><td>Thu Jan 7</td><td><b>A literature has a shape</b></td><td>Field map canvas: four quadrants. Related-work explorer: import a bibliography from your own search and from a model chat, resolve on OpenAlex, red means it does not exist, circle two clusters and name them. Write down three repeated tasks in your workflow a model could plausibly do</td><td>four quadrants non-empty; two clusters named; one red entry explained or removed; three candidate tasks</td></tr>
+      <tr><td>3</td><td>Tue Jan 12</td><td><b>Citation drift, and the hand-made test set</b></td><td>Five papers that cite your hook paper: exists, metadata, aligns, a locator on every claim. Model cold vs model with your map, both tables attached. Choose the project task; plan its ten-case ground truth</td><td>five audit rows with lights and locators; both model tables with a count of what was wrong; task chosen, two-line feasibility approved</td></tr>
+      <tr><td>4</td><td>Thu Jan 14</td><td><b>Build pattern A: the skill</b></td><td>What a skill file is; the description drives triggering; progressive disclosure. Encode your method as instructions with a mandated output format. Three phrasings that trigger, one that should not. Run on three cases; log the misses. Spend before and after</td><td>skill installed and demonstrated; four phrasings with outcomes; three cases run; spend recorded</td></tr>
+      <tr><td>5</td><td>Tue Jan 19</td><td><b>Build pattern B: script or visualizer</b></td><td>Why pure instructions hit a ceiling. Skill track: harden on all ten cases. Script track: the skill delegates its model call to a small script at a chosen model, validated output, retry, from a staff starter. Visualizer track: a one-page browser tool over your corpus or citation graph that calls the model and shows its answer beside the ground truth. Estimate cost, then measure</td><td>all ten cases run; per-case outcome table; cost per run against the estimate</td></tr>
+      <tr><td>6</td><td>Thu Jan 21</td><td><b>Evaluate, disclose, hand over</b></td><td>Failure rate as the first line. Tag a page of the skill's output as evidence, claim, filler, generic. ACM policy on generative AI; what the AI log becomes in a paper. One-page tool card. Install a classmate's skill and run it once</td><td>report with failure rate on line one; tag ratio; tool card; classmate's skill running</td></tr>
+      <tr><td></td><td>Tue Jan 26</td><td class="hint">Worktime and office hours</td><td class="hint">finish anything outstanding; extension deadline</td><td class="hint">late checkoffs</td></tr>
+      <tr><td></td><td>Thu Jan 28</td><td><b>Demo day</b></td><td>Three minutes each: run the skill or tool on a case the ground truth has not seen; show the failure rate and the cost; name the miss you learned most from</td><td>demo given; AI log with summary line</td></tr>
+      </tbody></table></div>
+      <h3>Project</h3>
+      <p>Two tiers, same checkoffs, same demo. Chosen in session 3; moving down is free.</p>
+      <ul>
+        <li><b>Skill track (pass bar).</b> A skill folder that encodes one repeated task from the student's research workflow, tested against ten cases judged by hand, with a failure-rate report, a cost log, and a one-page tool card. No code</li>
+        <li><b>Script or visualizer track (stretch).</b> The same skill delegating its model call to a script at a chosen model with validated output and retry; or a one-page browser visualizer over the student's corpus or a citation graph that calls the model and shows its answer next to the ground truth</li>
+      </ul>
+      <p>A good task: done every week and boring (extracting, tagging, checking, formatting, triage); the right answer is checkable by opening the source; ten cases fit in two hours of hand work; a full run on the cheapest model costs under a dollar; the corpus is on disk on the day it is chosen.</p>
+      <p>Sample projects: citation auditor for one's own related-work section; reverse outliner that flags paragraphs with no argumentative function; field-map filler checked against the OpenAlex graph; user-study checklist extractor (N, tasks, measures, IRB); codebook applier on one's own interview data (existing IRB coverage only); methods table extractor for biology or chemistry papers; method section to parametric CAD sketch; review triager on public OpenReview reviews; dataset link extractor with liveness check; budget-aware model router.</p>
+      <h3>Grading (P/D/F)</h3>
+      <ul>
+        <li>P: at least five of six session checkoffs by January 29, a demo with the skill or tool running on an unseen case, the AI log, the tool card</li>
+        <li>D: three or four checkoffs, or no demo. F: fewer than three</li>
+        <li>Automatic extension of any checkoff to the next session; none for demo day</li>
+        <li>Checkoffs test the shape of the artifact: quadrants non-empty, DOIs resolve, locators present, ten cases run, failure rate stated</li>
+        <li>Outside class: about two hours a week (reading, the ten-case ground truth, finishing checkoffs)</li>
+      </ul>
+      <h3>Policies</h3>
+      <p>AI use allowed everywhere, logged everywhere, verified before kept; first pass by hand. Keys in the shell or settings, never in a repo. Cheapest model by default; spend checked before and after agentic sessions. Same rules as 6.8500 (<a href="guides/working-with-ai.html">guide</a>).</p>
+    </div>
+  </div>
+</div>
+
+<div class="field">
+  <div class="label"><b>Co-instructors</b></div>
+  <div>
+    <p class="formhint">Please list the name, email, role and department of anyone who will also be teaching the subject (one per line).</p>
+    <div class="answer hascopy"><button class="copy" data-copy>copy</button>
+    <p>Stefanie Mueller, stefanie.mueller@mit.edu, sponsor and author of the skills labs previewed in sessions 4 and 5, EECS (listing as co-instructor: to confirm with her)</p>
+    <p>Graduate TA, to be hired, in-lab help, checkoffs and demo day, EECS</p>
+    </div>
+  </div>
+</div>
+
+<div class="field">
+  <div class="label"><b>Level</b></div>
+  <div>
+    <div class="answer short hascopy"><button class="copy" data-copy>copy</button><p>U/G. Graduate students are the main audience; undergraduates welcome who have read at least ten peer-reviewed papers in one area.</p></div>
+  </div>
+</div>
+
+<div class="field">
+  <div class="label"><b>Prereqs</b></div>
+  <div>
+    <div class="answer hascopy"><button class="copy" data-copy>copy</button>
+    <p>Has read peer-reviewed papers in some field and can name a research area to work in. Skill track: no programming. Script or visualizer track: Python, or basic HTML and JavaScript. Own laptop; MIT Kerberos for Parley chat and API.</p>
+    </div>
+  </div>
+</div>
+
+<div class="field">
+  <div class="label"><b>For credit?</b></div>
+  <div>
+    <p class="formhint">For-credit subjects can only use P/D/F grading except by prior approval of the EECS Education Officers. For-credit subjects must have an EECS Faculty or EECS Lecturer sponsor; enter the sponsor's name below if the proposer is not an EECS faculty member or lecturer. You must have a confirmed sponsor by the proposal deadline.</p>
+    <div class="answer short hascopy"><button class="copy" data-copy>copy</button><p>For-credit subject. 3 units, P/D/F (split per EECS convention, for example 1-1-1). Contact time 14 to 16 hours plus about two hours a week outside class.</p></div>
+  </div>
+</div>
+
+<div class="field">
+  <div class="label"><b>Sponsor(s)</b> <span class="req">required by deadline</span></div>
+  <div>
+    <div class="answer short hascopy"><button class="copy" data-copy>copy</button><p>Prof. Stefanie Mueller, EECS</p></div>
+    <p class="muted" style="font-size:12px;margin:8px 0 0">Not yet confirmed. Ask before October 6.</p>
+  </div>
+</div>
+
+<div class="field">
+  <div class="label"><b>Enrollment</b></div>
+  <div>
+    <p class="formhint">Estimated number of enrolled students. If the subject was offered previously: year of most recent offering, enrollment, number of funded staff.</p>
+    <div class="numrow">
+      <div class="answer num"><span class="k">estimated students</span>15 to 20 (cap 20)</div>
+      <div class="answer num"><span class="k">most recent offering</span>N/A, first offering</div>
+      <div class="answer num"><span class="k">enrollment then</span>N/A</div>
+      <div class="answer num"><span class="k">funded staff then</span>N/A</div>
+    </div>
+  </div>
+</div>
+
+<div class="field">
+  <div class="label"><b>Scheduling</b></div>
+  <div>
+    <p class="formhint">For each type of subject activity (lecture, recitation, lab, office hours, etc.), please describe when it is needed (start/end dates, days of the week, requested times, etc.) and the room requirements (capacity, A/V, etc.).</p>
+    <div class="answer hascopy"><button class="copy" data-copy>copy</button>
+    <p>Lab sessions (lecture plus hands-on): Tuesdays and Thursdays, January 5, 7, 12, 14, 19, 21, 1 to 3 pm. Six sessions.</p>
+    <p>Worktime and office hours: Tuesday January 26, 1 to 3 pm.</p>
+    <p>Demo day: Thursday January 28, 1 to 3 pm.</p>
+    <p>Office hour: after each session, 3 to 4 pm, same room if available.</p>
+    <p>Room: one classroom for all of the above, 20 to 25 seats, flat tables, power at every seat, projector with HDMI, reliable wifi. No special lab equipment; students bring laptops. A room like 34-501 is suitable.</p>
+    </div>
+  </div>
+</div>
+
+<div class="field">
+  <div class="label"><b>Budget</b></div>
+  <div>
+    <p class="formhint">Only for-credit IAP subjects may request funding for instructors or support staff (hourly student ug/g worker). Funding is contingent on an enrollment of 10 or more. Hourly wages only while the program is in session; no funds for preparation, A/V, food, or swag. If requesting a materials budget you must upload a budget sheet.</p>
+    <div class="numrow">
+      <div class="answer num"><span class="k">salaried staff</span>1 (graduate TA, hourly)</div>
+      <div class="answer num"><span class="k">staff-hours per week</span>8</div>
+      <div class="answer num"><span class="k">in-session weeks</span>4</div>
+      <div class="answer num"><span class="k">total hours</span>32</div>
+      <div class="answer num"><span class="k">materials budget</span>$0</div>
+    </div>
+    <p class="formhint">Please provide a rationale for the numbers above (for each type of subject activity, explain how many times the activity occurs and the level of staffing required).</p>
+    <div class="answer hascopy"><button class="copy" data-copy>copy</button>
+    <p>Sessions 1, 4, and 5 involve tool setup (Parley key, Claude Code pointed at the gateway, skill folders) where one person cannot unblock twenty laptops; the TA attends all six 2-hour sessions for hands-on help and checkoffs: 2 sessions × 2 h = 4 h/week. Office hour after each session: 2 h/week. Reviewing checkoff artifacts (field map export, audit table, skill folder, ground truth, failure-rate report): 2 h/week. Week 4 has the same load across worktime, demo day, and final checkoffs. Total 8 h/week × 4 weeks = 32 h. All model use runs on students' own Parley credits; skills are text and cost cents per run, so no materials budget is requested.</p>
+    </div>
+    <div class="upload" style="margin-top:12px">Budget document (PDF): none. No materials requested.</div>
+  </div>
+</div>
+
+<div class="field">
+  <div class="label"><b>External funding</b></div>
+  <div>
+    <p class="formhint">External funding, including funding from other MIT departments or centers: total and sources.</p>
+    <div class="numrow">
+      <div class="answer num"><span class="k">total</span>$0</div>
+      <div class="answer num"><span class="k">sources</span>N/A</div>
+    </div>
+  </div>
+</div>
+
+<div class="field">
+  <div class="label"><b>Comments</b></div>
+  <div>
+    <p class="formhint">Please provide any additional information that will assist the Department in evaluating your proposal.</p>
+    <div class="answer hascopy"><button class="copy" data-copy>copy</button>
+    <p>This subject previews 6.8500 AI-Assisted HCI Research (Prof. Mueller, fall 2027): its reading labs (weeks 1 to 5) and its skills labs (Friday labs 4 and 5). The fall subject goes considerably further (scholarly data pipelines, web deployment, a term project with a CHI-length paper, peer review), so this is not a substitute for it.</p>
+    <p>Model access is through MIT's Parley gateway. Graduate students have $30/month of API credit, undergraduates $10/month. A skill run costs cents; the subject defaults to the cheapest models and teaches budget monitoring in session 1. We will ask IS&amp;T whether a class account can back stop undergraduates on the script track.</p>
+    <p>No software cost: Claude Code and OpenCode are free clients; only tokens are billed.</p>
+    <p>Students bring their own field. Everyone builds against a paper and a task from their own research, so a biologist and a roboticist can sit in the same room.</p>
+    <p>First offering.</p>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<footer><span>MIT CSAIL, HCI Engineering Group · proposed for IAP 2027</span><span>draft, not submitted, pending sponsor confirmation</span></footer>
+</div>
+<script>
+document.querySelectorAll('[data-copy]').forEach(function(b){
+  b.addEventListener('click',async function(){
+    var box=b.closest('.answer'); var clone=box.cloneNode(true);
+    clone.querySelectorAll('.copy').forEach(function(x){x.remove();});
+    var text=clone.innerText.trim();
+    try{await navigator.clipboard.writeText(text);b.textContent='copied';}
+    catch(e){b.textContent='select and copy';}
+    setTimeout(function(){b.textContent='copy';},1400);
+  });
+});
+</script>
+</body>
+</html>

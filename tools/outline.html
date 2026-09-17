@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Paper outline · 6.8500</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Lato:wght@400;700&family=Roboto+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="../assets/css/site.css?v=3">
+<link rel="stylesheet" href="../assets/css/explorer.css?v=3">
+<link rel="stylesheet" href="../assets/css/tools.css?v=3">
+</head>
+<body>
+<div class="wrap wide">
+<div class="brand"><a href="../index.html">6.8500 <span>AI-Assisted HCI Research</span></a><span class="term">fall 2027 · draft site</span></div>
+<nav class="site" aria-label="Site">
+  <a href="../index.html">Schedule</a><a href="../project.html">Project</a><a href="../tools.html" aria-current="page">Activities</a><a href="../guides/index.html">Guides</a><a href="../readings.html">Readings</a><a href="../syllabus.html">Syllabus</a>
+</nav>
+<header class="page compact">
+<h1>Paper outline</h1>
+<p class="lede">A reverse outline of any paper: one sentence per paragraph saying what it does for the argument, the dependencies between them, and what each section holds up. Write yours first, then compare with the model's. Runs in your browser with your own Parley key. <span class="tag">beta</span></p>
+</header>
+
+<div class="explorer">
+<aside class="panel">
+  <details open>
+    <summary>1 · Paper</summary>
+    <label class="drop" id="drop">Drop a PDF here, or click to choose<input type="file" id="file" accept="application/pdf"></label>
+    <div class="row"><button id="btn-sample" class="ghost">Load the example paper</button><span class="hint">Lenticular Objects, UIST 2021. Preloaded so you can try the tool; replace it with your own.</span></div>
+    <label for="doi">Or look up by DOI or title</label>
+    <div class="row"><input id="doi" placeholder="10.1145/… or a title"><button id="btn-doi">Look up</button></div>
+    <details class="sub"><summary>Or paste text (your own draft works)</summary><textarea id="paste" rows="6" placeholder="Paste the paper or draft text here"></textarea><div class="row"><button id="btn-paste">Use this text</button></div></details>
+    <div class="kv" id="paper-kv">No paper loaded.</div>
+    <label class="inline" style="margin-top:6px"><input type="checkbox" id="opt-refs" checked> drop the reference list before sending</label>
+    <details class="sub"><summary>Text preview</summary><pre id="preview"></pre></details>
+  </details>
+  <details open>
+    <summary>2 · Model (your Parley key)</summary>
+    <label for="key">Parley API key</label>
+    <div class="row"><input id="key" type="password" placeholder="sk-parley-v1-…" autocomplete="off"><button id="btn-forget" title="Remove the key from this browser">Forget</button></div>
+    <label for="model">Model</label>
+    <select id="model"><option value="claude-haiku-4-5">claude-haiku-4-5 (enter a key to list)</option></select>
+    <div class="row" style="margin-top:8px">
+      <label class="inline"><input type="radio" name="depth" value="full" checked> every paragraph</label>
+      <label class="inline"><input type="radio" name="depth" value="sections"> sections only (cheap)</label>
+    </div>
+    <label class="inline" style="margin-top:6px"><input type="checkbox" id="opt-byhand" checked> by hand first: hide the model's sentences until I reveal them</label>
+    <p class="hint">Estimated cost: <b id="est">$0.0000</b> · session so far: <b id="cost">$0.0000</b></p>
+    <div class="row"><button id="btn-run">Run the outline</button><button id="btn-reveal" class="ghost" hidden>Reveal the model's lines</button></div>
+    <p class="hint">The paper text is sent to parley.api.mit.edu (MIT terms: not used for training; medium-risk data allowed). Do not upload confidential review packets.</p>
+  </details>
+  <details open>
+    <summary>3 · Export</summary>
+    <div class="row wrap"><button id="btn-md">Markdown</button><button id="btn-json">JSON</button><button id="btn-log">Copy AI log</button></div>
+    <p class="hint">Markdown includes your sentences and the model's side by side, the flags, and the checks.</p>
+  </details>
+  <div class="status" id="status">The example paper is loading. Drop your own PDF or paste your draft to replace it.</div>
+</aside>
+<main class="canvas">
+  <div class="tabs"><button data-v="skeleton" class="on">Skeleton</button><button data-v="flow">Flow</button><button data-v="checks">Checks</button></div>
+  <div class="view" id="v-skeleton"><p class="hint">The skeleton appears here: sections, one line per paragraph, arrows for what depends on what.</p></div>
+  <div class="view flow" id="v-flow" hidden></div>
+  <div class="view" id="v-checks" hidden></div>
+</main>
+</div>
+<footer><span>MIT CSAIL, HCI Engineering Group · 6.8500 fall 2027</span><span>text extraction: pdf.js in your browser · model: MIT Parley, your key</span></footer>
+</div>
+<script src="../assets/js/vendor/pdf.min.js"></script>
+<script src="../assets/js/parley.js?v=3"></script>
+<script src="../assets/js/pdftext.js?v=3"></script>
+<script src="../assets/js/outline.js?v=3"></script>
+</body>
+</html>

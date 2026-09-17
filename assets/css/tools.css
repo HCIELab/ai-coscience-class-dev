@@ -1,0 +1,46 @@
+/* shared bits for the paper tools (outline, reviewers); layout comes from explorer.css */
+.tabs{display:flex;gap:2px;border-bottom:1px solid var(--line);padding:6px 10px 0;background:#fafafa}
+.tabs button{font:12.5px 'Roboto',sans-serif;padding:7px 12px;border:1px solid transparent;border-bottom:0;background:none;color:var(--muted);cursor:pointer;border-radius:3px 3px 0 0}
+.tabs button.on{background:#fff;color:var(--ink);border-color:var(--line)}
+.view{padding:14px 18px 40px;overflow:auto;height:calc(100% - 36px)}
+.view[hidden]{display:none}
+.drop{border:1.5px dashed var(--line);border-radius:3px;padding:14px;text-align:center;color:var(--muted);font-size:12.5px;cursor:pointer;background:#fafafa}
+.drop.over{border-color:var(--hover);color:var(--hover)}
+.drop input{display:none}
+.kv{font-size:12px;color:var(--muted);margin-top:6px} .kv b{color:var(--ink);font-weight:500}
+.skel{position:relative}
+.skel svg.arrows{position:absolute;left:0;top:0;width:70px;height:100%;pointer-events:none;overflow:visible}
+.sec{margin:0 0 18px 70px}
+.sec h3{font-size:14px;margin:0 0 6px;padding-bottom:4px;border-bottom:1px solid var(--line);display:flex;gap:10px;align-items:baseline}
+.sec h3 small{font-size:11px;color:var(--muted);font-weight:400}
+.sec .holds{font-size:12px;color:var(--muted);margin:0 0 8px}
+.para{display:grid;grid-template-columns:34px 92px 1fr auto;gap:8px;align-items:start;padding:5px 0;border-bottom:1px dashed #eee;font-size:13px}
+.para .n{font-family:'Roboto Mono',Menlo,monospace;font-size:11px;color:var(--muted);padding-top:2px}
+.para .chip{font-size:10px;letter-spacing:.06em;text-transform:uppercase;padding:2px 6px;border-radius:2px;color:#fff;text-align:center;white-space:nowrap}
+.para .does{line-height:1.4} .para .does .anchor{color:var(--muted);font-size:11.5px;display:block}
+.para .does .mine{display:block;min-height:1.3em;border-bottom:1px solid var(--line);outline:none;padding:1px 2px} .para .does .mine:empty::before{content:"your one sentence: what does this paragraph do for the argument?";color:#bbb}
+.para .does .model{display:block;color:#2a6f3f}
+.para .does .model.hiddenline{filter:blur(4px);user-select:none}
+.para .flags{display:flex;gap:4px;flex-wrap:wrap;justify-content:flex-end}
+.para .flags span{font-size:10px;padding:2px 6px;border-radius:2px;border:1px solid var(--pen);color:var(--pen);white-space:nowrap}
+.para.contrib{background:#f0f7f3}
+.ratio{display:flex;height:14px;border-radius:2px;overflow:hidden;margin:8px 0 4px} .ratio span{display:block}
+.ratiokey{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:11px;color:var(--muted)} .ratiokey i{display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:4px;vertical-align:-1px}
+.checks li{margin:8px 0;font-size:13.5px} .checks li b{font-weight:500}
+.flow svg{width:100%;height:auto;display:block}
+.rev{font-size:13.5px;line-height:1.5;max-width:76em}
+.rev h3{font-size:16px;margin:14px 0 6px} .rev h4{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:14px 0 4px}
+.rev .score{display:inline-block;font-family:'Roboto Mono',Menlo,monospace;font-size:12px;border:1px solid var(--line);border-radius:3px;padding:2px 8px;margin-right:8px}
+.rev ol,.rev ul{padding-left:20px} .rev li{margin:5px 0}
+.rev .type{font-size:10px;letter-spacing:.06em;text-transform:uppercase;padding:1px 6px;border-radius:2px;background:var(--wire2);color:var(--muted);margin-right:6px}
+.rev .sev-high{border-left:3px solid var(--pen);padding-left:8px} .rev .sev-medium{border-left:3px solid var(--hl);padding-left:8px} .rev .sev-low{border-left:3px solid var(--line);padding-left:8px}
+.rev .check{color:var(--muted);font-size:12.5px;display:block;margin-top:2px}
+.rev blockquote{margin:6px 0;padding:4px 10px;border-left:3px solid var(--line);color:#444;font-size:13px}
+.persona{border:1px solid var(--line);border-radius:3px;padding:8px 10px;margin:6px 0;font-size:12.5px}
+.persona .head{display:flex;gap:8px;align-items:center} .persona .head b{flex:1;font-weight:500} .persona .head button{padding:2px 7px;font-size:11px;background:#fff;color:var(--muted);border-color:var(--line)}
+.persona textarea{margin-top:6px;font-size:11.5px;min-height:70px}
+.persona[data-open="0"] textarea{display:none}
+table.meta{width:100%;border-collapse:collapse;font-size:13px} table.meta th,table.meta td{text-align:left;vertical-align:top;padding:6px 8px;border-bottom:1px solid var(--line)} table.meta thead th{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:500}
+.decision{display:inline-block;padding:4px 10px;border-radius:3px;background:var(--wire2);font-weight:500;margin-right:8px}
+.progress{font-size:12px;color:var(--muted)}
+.persona .head label{display:inline;text-transform:none;letter-spacing:0;font-size:13px;color:var(--ink);margin:0;cursor:pointer}

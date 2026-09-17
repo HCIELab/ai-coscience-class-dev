@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Related-work explorer · 6.8500</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Lato:wght@400;700&family=Roboto+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="../assets/css/site.css?v=3">
+<link rel="stylesheet" href="../assets/css/explorer.css?v=3">
+</head>
+<body>
+<div class="wrap wide">
+<div class="brand"><a href="../index.html">6.8500 <span>AI-Assisted HCI Research</span></a><span class="term">fall 2027 · draft site</span></div>
+<nav class="site" aria-label="Site">
+  <a href="../index.html">Schedule</a>
+  <a href="../project.html">Project</a>
+  <a href="../tools.html" aria-current="page">Activities</a>
+  <a href="../guides/index.html">Guides</a>
+  <a href="../readings.html">Readings</a>
+  <a href="../syllabus.html">Syllabus</a>
+</nav>
+
+<header class="page compact">
+<h1>Related-work explorer</h1>
+<p class="lede">Your bibliography, the papers around it, and what the model thinks the field is, on one map. Everything resolves against OpenAlex in your browser. A paper that does not resolve is flagged, not trusted. <span class="tag">beta</span></p>
+</header>
+
+<div class="explorer">
+<aside class="panel">
+
+  <details open>
+    <summary>1 · Seed paper</summary>
+    <label for="seed">DOI or title of your hook paper</label>
+    <div class="row"><input id="seed" placeholder="10.1145/3359183 or a title"><button id="btn-seed">Load</button></div>
+    <div class="opts">
+      <label><input type="checkbox" id="opt-refs" checked> its references</label>
+      <label><input type="checkbox" id="opt-cites" checked> works that cite it, <input type="number" id="opt-ncites" value="30" min="0" max="100" style="width:3.5em"> newest and most linked</label>
+    </div>
+    <p class="hint" id="cites-count"></p>
+    <div class="row"><button id="btn-starters" class="ghost">Show the hook papers</button></div>
+  </details>
+
+  <details open>
+    <summary>2 · Your bibliography</summary>
+    <label for="bib">Paste BibTeX, or one paper per line (title, DOI, or a citation)</label>
+    <textarea id="bib" rows="5" placeholder="@article{...}&#10;Mathur et al. Dark Patterns at Scale. CSCW 2019&#10;10.1145/3544548.3580841"></textarea>
+    <div class="row"><button id="btn-bib">Add and resolve</button><span class="hint" id="bib-summary"></span></div>
+    <p class="hint">Green resolves. Red with × does not resolve, which usually means the reference does not exist as written. Grey are connected works you have not marked as read.</p>
+  </details>
+
+  <details>
+    <summary>3 · Ask the model (your Parley key)</summary>
+    <label for="key">Parley API key</label>
+    <div class="row"><input id="key" type="password" placeholder="sk-parley-v1-…" autocomplete="off"><button id="btn-forget" title="Remove the key from this browser">Forget</button></div>
+    <p class="hint">Stored only in this browser, never sent anywhere but parley.api.mit.edu. Use Forget on a shared machine.</p>
+    <label for="model">Model</label>
+    <select id="model"><option value="claude-haiku-4-5">claude-haiku-4-5 (enter a key to list)</option></select>
+    <label for="topic">Field or topic</label>
+    <input id="topic" placeholder="dark patterns in user interfaces">
+    <div class="row">
+      <label class="inline">Papers <input type="number" id="nask" value="10" min="3" max="25" style="width:3.5em"></label>
+      <label class="inline"><input type="radio" name="mode" value="cold" checked> cold</label>
+      <label class="inline"><input type="radio" name="mode" value="map"> given my map</label>
+    </div>
+    <div class="row"><button id="btn-ask">Ask</button><span class="hint" id="ask-summary"></span></div>
+    <p class="hint">Cost this session: <b id="cost">$0.0000</b>. Blue nodes are the model's picks. Blue with × means the model named a paper OpenAlex cannot find.</p>
+    <details class="sub"><summary>Last raw answer</summary><pre id="raw"></pre></details>
+  </details>
+
+  <details open>
+    <summary>4 · Annotate</summary>
+    <div class="row modes">
+      <button id="mode-select" class="on">Select</button>
+      <button id="mode-circle">Circle a cluster</button>
+    </div>
+    <p class="hint">Click a node for details. Shift-click flags it as a gap to read. In circle mode, draw a loop around a group and name it.</p>
+    <ul id="clusters" class="clusters"></ul>
+  </details>
+
+  <details open>
+    <summary>5 · Turn in</summary>
+    <label for="bullets">Five bullets</label>
+    <textarea id="bullets" rows="7">- Clusters, named:
+- The faction line, and what it is about:
+- The biggest gap in my map, and the one paper I will add:
+- Where the model's picks sit on the graph:
+- One thing this graph itself gets wrong or misleading:</textarea>
+    <div class="row wrap">
+      <button id="btn-json">Export JSON</button>
+      <button id="btn-png">Export PNG</button>
+      <button id="btn-log">Copy AI log</button>
+      <button id="btn-clear" class="danger">Clear map</button>
+    </div>
+    <p class="hint">Upload the JSON and the PNG to your student folder. The AI log rows paste into your log as markdown.</p>
+  </details>
+
+  <div class="status" id="status">Load a seed paper or paste a bibliography to start.</div>
+</aside>
+
+<main class="canvas">
+  <svg id="graph" role="img" aria-label="Citation map"></svg>
+  <div id="starter">
+    <div class="starter-head">
+      <h2>Start from a hook paper, or from your own</h2>
+      <p>These are the course's hook papers, here so you can practice. Your own seed is the point: paste a DOI or title on the left. Click a card to load it as the seed, with its references and the works that cite it.</p>
+      <button id="starter-close" class="ghost">Close</button>
+    </div>
+    <div id="starter-grid" class="starter-grid"></div>
+  </div>
+  <div class="legend">
+    <span><i style="background:#333"></i>seed</span>
+    <span><i style="background:#3a9d5d"></i>in your map</span>
+    <span><i style="background:#3b7dd8"></i>model's pick</span>
+    <span><i style="background:#c4c4c4"></i>connected, unread</span>
+    <span><i class="ring" style="border-color:#e74c3c"></i>not found</span>
+    <span><i class="ring" style="border-color:#ed8000"></i>flagged to read</span>
+    <span class="muted">x = year · size = links within this map, not importance</span>
+  </div>
+  <div id="tooltip" hidden></div>
+  <div id="details" hidden></div>
+</main>
+</div>
+
+<footer><span>MIT CSAIL, HCI Engineering Group · 6.8500 fall 2027</span><span>data: OpenAlex · model: MIT Parley, your key</span></footer>
+</div>
+<script src="../assets/js/d3.v7.min.js"></script>
+<script src="../assets/js/explorer.js?v=3"></script>
+</body>
+</html>

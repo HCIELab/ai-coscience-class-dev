@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Reviewer predictor · 6.8500</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Lato:wght@400;700&family=Roboto+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="../assets/css/site.css?v=3">
+<link rel="stylesheet" href="../assets/css/explorer.css?v=3">
+<link rel="stylesheet" href="../assets/css/tools.css?v=3">
+</head>
+<body>
+<div class="wrap wide">
+<div class="brand"><a href="../index.html">6.8500 <span>AI-Assisted HCI Research</span></a><span class="term">fall 2027 · draft site</span></div>
+<nav class="site" aria-label="Site">
+  <a href="../index.html">Schedule</a><a href="../project.html">Project</a><a href="../tools.html" aria-current="page">Activities</a><a href="../guides/index.html">Guides</a><a href="../readings.html">Readings</a><a href="../syllabus.html">Syllabus</a>
+</nav>
+<header class="page compact">
+<h1>Reviewer predictor</h1>
+<p class="lede">Pick the reviewers your paper might draw, edit what each of them cares about, and get independent reviews plus a meta-review. Write your own prediction first if you want to score yourself. Runs in your browser with your own Parley key. <span class="tag">beta</span></p>
+</header>
+
+<div class="explorer">
+<aside class="panel">
+  <details open>
+    <summary>1 · Paper</summary>
+    <label class="drop" id="drop">Drop a PDF here, or click to choose<input type="file" id="file" accept="application/pdf"></label>
+    <div class="row"><button id="btn-sample" class="ghost">Load the example paper</button><span class="hint">Lenticular Objects, UIST 2021. Preloaded so you can try the tool; replace it with your own.</span></div>
+    <details class="sub"><summary>Or paste text</summary><textarea id="paste" rows="6" placeholder="Paste the draft here"></textarea><div class="row"><button id="btn-paste">Use this text</button></div></details>
+    <div class="kv" id="paper-kv">No paper loaded.</div>
+    <label class="inline" style="margin-top:6px"><input type="checkbox" id="opt-refs" checked> drop the reference list before sending</label>
+  </details>
+  <details open>
+    <summary>2 · Venue and reviewers</summary>
+    <div class="row">
+      <select id="venue"><option>CHI</option><option>UIST</option><option>CSCW</option><option>DIS</option><option>TEI</option><option>IMWUT</option><option>Creativity &amp; Cognition</option><option>ASSETS</option><option>other HCI venue</option></select>
+      <select id="track"><option>Late-Breaking Work</option><option>full paper</option><option>short paper</option></select>
+    </div>
+    <p class="hint">Tick two to four reviewers. Edit any persona; the text is injected into that reviewer's prompt.</p>
+    <div id="personas"></div>
+    <div class="row wrap"><button id="btn-add" class="ghost">Add a custom reviewer</button><label class="inline"><input type="checkbox" id="opt-meta" checked> meta-review by an AC after the reviews</label></div>
+  </details>
+  <details>
+    <summary>3 · Your own prediction (optional, before running)</summary>
+    <textarea id="mine" rows="6" placeholder="What will they flag? Which point decides it? Write it here before you run, then compare."></textarea>
+  </details>
+  <details open>
+    <summary>4 · Model (your Parley key)</summary>
+    <label for="key">Parley API key</label>
+    <div class="row"><input id="key" type="password" placeholder="sk-parley-v1-…" autocomplete="off"><button id="btn-forget" title="Remove the key from this browser">Forget</button></div>
+    <label for="model">Model</label>
+    <select id="model"><option value="claude-sonnet-5">claude-sonnet-5 (enter a key to list)</option></select>
+    <p class="hint">Estimated cost: <b id="est">$0.0000</b> for the ticked reviewers · session so far: <b id="cost">$0.0000</b></p>
+    <div class="row"><button id="btn-run">Run the reviews</button><span class="progress" id="prog"></span></div>
+    <p class="hint">The paper text goes to parley.api.mit.edu once per reviewer (MIT terms: not used for training). Never upload a confidential review packet or someone else's unpublished draft without permission.</p>
+  </details>
+  <details open>
+    <summary>5 · Export</summary>
+    <div class="row wrap"><button id="btn-md">Markdown</button><button id="btn-json">JSON</button><button id="btn-log">Copy AI log</button></div>
+  </details>
+  <div class="status" id="status">The example paper is loading. Drop your own PDF or paste your draft to replace it.</div>
+</aside>
+<main class="canvas">
+  <div class="tabs" id="tabs"><button data-v="intro" class="on">About</button></div>
+  <div class="view" id="v-intro"><div class="rev"><h3>What this is for</h3><p>Reviews are predictable more often than authors expect. A fabrication reviewer asks about tolerances; a methods reviewer asks about power; a design researcher asks who this is for. Running the personas you are likely to draw, before you submit, tells you which section is under-defended. It is also the "Claude predicts the reviewers" half of the week 10 activity.</p><p>Two rules. The model is not a reviewer; it is a rehearsal partner, and it is confidently wrong sometimes, so check every quoted claim against your text. And a review it writes about someone else's confidential draft is a breach; only run it on your own work or on published papers.</p></div></div>
+</main>
+</div>
+<footer><span>MIT CSAIL, HCI Engineering Group · 6.8500 fall 2027</span><span>text extraction: pdf.js in your browser · model: MIT Parley, your key</span></footer>
+</div>
+<script src="../assets/js/vendor/pdf.min.js"></script>
+<script src="../assets/js/parley.js?v=3"></script>
+<script src="../assets/js/pdftext.js?v=3"></script>
+<script src="../assets/js/reviewers.js?v=3"></script>
+</body>
+</html>

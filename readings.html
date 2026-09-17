@@ -14,24 +14,58 @@
 <nav class="site" aria-label="Site">
   <a href="index.html">Schedule</a>
   <a href="project.html">Project</a>
-  <a href="tools.html">Tools</a>
+  <a href="tools.html">Activities</a>
   <a href="guides/index.html">Guides</a>
   <a href="readings.html" aria-current="page">Readings</a>
   <a href="syllabus.html">Syllabus</a>
 </nav>
 
 <header class="page"><h1>Readings</h1>
-<p class="lede">A reference shelf: what the field is saying about AI and its own research process, the hook papers you will work from, and the papers we reverse-outline.</p></header>
+<p class="lede">The papers this course is built on: seventeen hook papers, one per fabrication subarea, and the two Late-Breaking Works we take apart.</p></header>
 
-<section><h2>Course readings</h2>
+<section><h2>Course readings: the hook papers</h2>
+<p class="lede">Seventeen award papers, one per fabrication subarea. Each is a door into a field: you will map what came before it, who disagrees with it, what happened after, and why it got attention. All are loaded as sample seeds in the <a href="tools/explorer.html">related-work explorer</a>. Your own seed is welcome; propose it by the end of week 2.</p>
+<div class="tablewrap"><table class="plain"><thead><tr><th>Subarea</th><th>Paper</th><th>Venue</th><th>Award</th></tr></thead><tbody>
+<tr><td>Fabrication machines and process</td><td><a href="https://doi.org/10.1145/3379337.3415863">Programmable Filament: Printed Filaments for Multi-material 3D Printing</a><br><span class="muted">Takahashi et al.</span></td><td>UIST 2020</td><td>Honorable Mention</td></tr>
+<tr><td>Craft-centered machine design</td><td><a href="https://doi.org/10.1145/3613904.3642361">Throwing Out Conventions: Reimagining Craft-Centered CNC Tool Design through the Digital Pottery Wheel</a><br><span class="muted">Moyer et al.</span></td><td>CHI 2024</td><td>Best Paper</td></tr>
+<tr><td>Laser cutting and assembly</td><td><a href="https://doi.org/10.1145/3472749.3474799">Roadkill: Nesting Laser-Cut Objects for Fast Assembly</a><br><span class="muted">Abdullah et al.</span></td><td>UIST 2021</td><td>Honorable Mention</td></tr>
+<tr><td>Computational design tools</td><td><a href="https://doi.org/10.1145/3544548.3580745">CoilCAM: Enabling Parametric Design for Clay 3D Printing Through an Action-Oriented Toolpath Programming System</a><br><span class="muted">Bourgault et al.</span></td><td>CHI 2023</td><td>Honorable Mention</td></tr>
+<tr><td>Electronics prototyping</td><td><a href="https://doi.org/10.1145/3411764.3445422">Coupling Simulation and Hardware for Interactive Circuit Debugging</a><br><span class="muted">Strasnick et al.</span></td><td>CHI 2021</td><td>Best Paper</td></tr>
+<tr><td>Sensing in printed objects</td><td><a href="https://doi.org/10.1145/3173574.3173756">Off-Line Sensing</a><br><span class="muted">Schmitz et al.</span></td><td>CHI 2018</td><td>Honorable Mention</td></tr>
+<tr><td>Printed and flexible electronics</td><td><a href="https://doi.org/10.22028/d291-30538">Soft Inkjet Circuits: Rapid Multi-Material Fabrication of Soft Circuits using a Commodity Inkjet Printer</a><br><span class="muted">Khan et al.</span></td><td>UIST 2019</td><td>Best Paper</td></tr>
+<tr><td>Fabricated optics and displays</td><td><a href="https://doi.org/10.1145/3706598.3714031">ColdGlass: Full-Color Desktop 3D Printing in Glass</a><br><span class="muted">Friedman-Gerlicz et al.</span></td><td>CHI 2025</td><td>Honorable Mention</td></tr>
+<tr><td>Metamaterials and mechanisms</td><td><a href="https://doi.org/10.1145/3706598.3714282">Xstrings: 3D Printing Cable-Driven Mechanism for Actuation, Deformation, and Manipulation</a><br><span class="muted">Li et al.</span></td><td>CHI 2025</td><td>Honorable Mention</td></tr>
+<tr><td>Shape change and 4D printing</td><td><a href="https://doi.org/10.1145/3706598.3714304">TH-Wood: Developing Thermo-Hygro-Coordinating Driven Wood Actuators to Enhance Human-Nature Interaction</a><br><span class="muted">Wang et al.</span></td><td>CHI 2025</td><td>Honorable Mention</td></tr>
+<tr><td>Knit and textile fabrication</td><td><a href="https://doi.org/10.1145/3706598.3713156">LivingLoom: Investigating Human-Plant Symbiosis Through Integrating Living Plants Into (E-)Textiles</a><br><span class="muted">Zhu et al.</span></td><td>CHI 2025</td><td>Best Paper</td></tr>
+<tr><td>Appearance and surface</td><td><a href="https://doi.org/10.1145/3388534.3407296">Photo-Chromeleon: Re-Programmable Multi-Color Textures Using Photochromic Dyes</a><br><span class="muted">Jin et al.</span></td><td>UIST 2019</td><td>Best Paper, plus Best Talk</td></tr>
+<tr><td>Sustainable fabrication</td><td><a href="https://doi.org/10.1145/3706598.3714080">Enabling Recycling of Multi-Material 3D Printed Objects through Computational Design and Disassembly by Dissolution</a><br><span class="muted">Wen et al.</span></td><td>CHI 2025</td><td>Best Paper</td></tr>
+<tr><td>Fabricated haptics</td><td><a href="https://doi.org/10.1145/3313831.3376470">Wireality: Enabling Complex Tangible Geometries in Virtual Reality with Worn Multi-String Haptics</a><br><span class="muted">Fang et al.</span></td><td>CHI 2020</td><td>Best Paper</td></tr>
+<tr><td>Fabrication for accessibility</td><td><a href="https://doi.org/10.1145/3290605.3300544">&quot;Occupational Therapy is Making&quot;: Clinical Rapid Prototyping and Digital Fabrication</a><br><span class="muted">Hofmann et al.</span></td><td>CHI 2019</td><td>Best Paper</td></tr>
+<tr><td>Fabrication and generative AI</td><td><a href="https://doi.org/10.1145/3544548.3580999">Exploring Challenges and Opportunities to Support Designers in Learning to Co-create with AI-based Manufacturing Design Tools</a><br><span class="muted">Gmeiner et al.</span></td><td>CHI 2023</td><td>Honorable Mention</td></tr>
+<tr><td>Fabrication practice</td><td><a href="https://doi.org/10.1145/3706598.3713354">It&#x27;s Not the Shape, It&#x27;s the Settings: Tools for Exploring, Documenting, and Sharing Physical Fabrication Parameters in 3D Printing</a><br><span class="muted">Subbaraman et al.</span></td><td>CHI 2025</td><td>Honorable Mention</td></tr>
+</tbody></table></div>
+<p class="muted">At most two students per paper. Awards are listed because they mark attention, which is not the same thing as being right; part of the speedrun is finding out which one each paper had.</p></section>
+
+<section><h2>Strong LBWs we reverse-outline</h2>
+<ul class="refs">
+<li>Qamar et al. ChromoPrint: A Multi-Color 3D Printer Based on a Reprogrammable Photochromic Resin. CHI 2022 Late-Breaking Work. <a href="https://doi.org/10.1145/3491101.3519784">DOI</a></li>
+<li>Lin et al. TensiChrome: A Design Space for Mechanochromic Interfaces Using Hologram Films. CHI 2026 Late-Breaking Work. <a href="https://doi.org/10.1145/3731459.3779338">DOI</a></li>
+</ul>
+<p class="muted">Download the PDF from the ACM link (MIT has access) and drop it into the <a href="tools/outline.html">paper outline tool</a>; write your one sentence per paragraph before revealing the model's.</p></section>
+
+<section><h2>Reading protocol</h2>
+<p>Three-pass reading and the weekly receipt are in <a href="guides/reading-a-field.html">Reading a field</a>.</p></section>
+
+<section><h2>Further reading</h2>
+<details class="further"><summary>How AI is changing the HCI research process</summary>
+<h3>Community discussion</h3>
 <ul class="refs">
 <li>The Global Impact of Generative AI on the HCI Landscape. Panel, CHI 2026. <a href="https://dl.acm.org/doi/10.1145/3772363.3790107">DOI</a></li>
 <li>Kapania et al. Examining the Ethics of LLM Use in HCI Research Practices. CSCW 2025. <a href="https://arxiv.org/pdf/2403.19876">PDF</a></li>
 <li>Transforming HCI Research Cycles using Generative AI and "Large Whatever Models" (LWMs). SIG, CHI 2024. <a href="https://dl.acm.org/doi/10.1145/3613905.3643977">DOI</a></li>
 <li>Pang et al. Understanding the LLM-ification of CHI. CHI 2025. <a href="https://dl.acm.org/doi/10.1145/3706598.3713726">DOI</a></li>
-</ul></section>
-
-<section><h2>How AI is changing the HCI research process, by stage</h2>
+</ul>
+<h3>By research stage</h3>
 <p class="muted">Annotated overview compiled by the teaching team, July 2026. Recent DOIs to be re-checked before citing.</p>
 <h3>Related-work search, reading, and sensemaking</h3>
 <ul class="refs">
@@ -58,24 +92,8 @@
 <li>GenAICHI: Generative AI and HCI. Workshop series, CHI 2022 to 2025. <a href="https://generativeaiandhci.github.io/">site</a></li>
 <li>Death of the Design Researcher? Creating Knowledge Resources for Designers Using Generative AI. Workshop, DIS 2024. <a href="https://dl.acm.org/doi/10.1145/3656156.3658398">DOI</a></li>
 <li>Tools for Thought: Understanding, Protecting, and Augmenting Human Cognition with Generative AI. Workshop, CHI 2025 and 2026. <a href="https://ai-tools-for-thought.github.io/workshop/2025">site</a></li>
-</ul></section>
-
-<section><h2>Hook paper menu</h2>
-<p>Released in week 1. Ten to twelve papers, five to fifteen years old, mixed fields, at most two per student. Each paper was chosen to teach a different kind of lesson:</p>
-<div class="tablewrap"><table class="plain"><thead><tr><th>Slot</th><th>What a good speedrun discovers</th></tr></thead><tbody>
-<tr><td>partly overturned</td><td>the afterlife narrows or reverses the headline claim</td></tr>
-<tr><td>methodologically weak but famous</td><td>attention and rigor came apart; why it got cited anyway</td></tr>
-<tr><td>solid but poorly written</td><td>the contribution is real and hard to find</td></tr>
-<tr><td>live controversy</td><td>the field has not settled; factions visible in the graph</td></tr>
-<tr><td>solid, public data</td><td>a clean lineage and a figure you can reproduce</td></tr>
-</tbody></table></div>
-<p class="muted">You will not be told which paper is in which slot. Opt-out for students with a thesis topic: proposal due end of week 2.</p></section>
-
-<section><h2>Strong LBWs we reverse-outline</h2>
-<p class="muted">Two to three short papers across genres (fabrication or system, study, theory). Posted before week 6.</p></section>
-
-<section><h2>Reading protocol</h2>
-<p>Three-pass reading and the weekly receipt are in <a href="guides/reading-a-field.html">Reading a field</a>.</p></section>
+</ul>
+</details></section>
 
 <footer><span>MIT CSAIL, HCI Engineering Group · 6.8500 fall 2027</span><span>draft, not yet reviewed by the teaching team</span></footer>
 </div>

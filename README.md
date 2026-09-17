@@ -13,6 +13,8 @@ Six-item nav, no dropdowns:
 - `readings.html` **Readings**: course readings, the annotated overview by research stage, hook paper slots, strong LBWs
 - `syllabus.html` **Syllabus**: about, team, grading, policies, links
 
+Unlisted: `iap-2027.html`, the IAP 2027 proposal page (Research with AI, skill deliverable). Not in the nav, not linked from any page, `noindex` like the rest; reachable by URL only. Source draft lives in `6_IAP-Version/C_research-skill.md`
+
 Also: `labs-catalog.html` (all thirteen lab ideas with wireframes), `labs/lab-template.html` (student-facing lab page template), `assets/css/site.css` (styles, light only, matching hcie.csail.mit.edu). Pages are generated from a build script kept outside the repo; edit the HTML directly or ask for the script
 - `.env.example` variable reference for local scripts; `.env` itself is ignored
 - `.nojekyll` tells GitHub Pages to serve files as-is
@@ -40,3 +42,7 @@ Plain preview without the editor: `python3 -m http.server 8000`.
 ## Adding a page
 
 Copy `labs/lab-template.html`, keep the `<head>` and the nav block (charset, viewport, robots, fonts, stylesheet), fix the relative paths, and add it to the nav in each page.
+
+## Hook papers in the explorer
+
+`assets/data/hook-papers.json` lists the hook papers shown as sample seeds in `tools/explorer.html`. Each entry may name a `thumb` image; the card shows it when present and a styled front-page placeholder otherwise. To add a first-page screenshot for a paper, save a PNG about 360px wide as `assets/img/seeds/<OpenAlex id>.png` and set `"thumb"` to that path. Only include images you have the right to publish (open-access PDFs are fine; publisher PDFs behind the MIT license are not, on a public site).

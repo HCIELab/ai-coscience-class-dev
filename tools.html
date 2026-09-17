@@ -14,14 +14,14 @@
 <nav class="site" aria-label="Site">
   <a href="index.html">Schedule</a>
   <a href="project.html">Project</a>
-  <a href="tools.html" aria-current="page">Tools</a>
+  <a href="tools.html" aria-current="page">Activities</a>
   <a href="guides/index.html">Guides</a>
   <a href="readings.html">Readings</a>
   <a href="syllabus.html">Syllabus</a>
 </nav>
 
-<header class="page"><h1>Tools</h1>
-<p class="lede">Browser tools you reuse across weeks. Each is one HTML page, no server, state in your browser, export to markdown. Week 9 reuses the week 3 tool, so they live here rather than inside a lab.</p></header>
+<header class="page"><h1>Interactive Activities</h1>
+<p class="lede">On Wednesdays, you will use these tools to explore our lecture materials such as related work exploration and argument forming. The tool will visualize your thought process, where you can either use the interactive tool we have, or upload your chat history with your agentic tool for TAs to check off. During the check off, the TA will ask you to explain your thought process and your graph. </p></header>
 <div class="grid">
 <article class="lab">
 <figure><svg viewBox="0 0 320 200" role="img" aria-label="Citation graph overlay: clusters circled by hand, nodes colored by whether they are in the student's map, a gap, or Claude's list">
@@ -42,7 +42,7 @@
       <rect class="ai" x="80" y="174" width="7" height="7"/><text x="91" y="180">Claude's ten</text>
       <rect class="w" x="80" y="186" width="7" height="7"/><text x="91" y="192">unread</text>
     </svg></figure>
-<div class="cap"><div class="meta"><span class="tag">weeks 3, 5, 9, project</span><span class="tag status">planned</span></div><h3>Related-work explorer</h3><p>Import a bibliography (your search, or BibTeX from a Claude chat). Every entry is resolved against OpenAlex; unresolved ones are flagged red. Litmaps-style graph by year and cluster.</p></div>
+<div class="cap"><div class="meta"><span class="tag">weeks 3, 5, 9, project</span><span class="tag status">beta</span></div><h3><a href="tools/explorer.html">Related-work explorer</a></h3><p>Import a bibliography (your search, or BibTeX from a Claude chat) or a seed DOI. Every entry resolves against OpenAlex in your browser; unresolved ones are flagged red. With your own Parley key, ask the model for its top papers and see where they land. <a href="tools/explorer.html">Open the explorer</a>.</p></div>
 </article>
 <article class="lab">
 <figure><svg viewBox="0 0 320 200" role="img" aria-label="Reverse outline builder: paper on the left, one sentence per paragraph on the right, dependency arrows, an orphan flagged">
@@ -66,7 +66,7 @@
       <path class="pens" d="M290,139 C310,139 310,165 292,165" marker-end="url(#arr)"/>
       <rect class="w" x="160" y="180" width="22" height="10" rx="5"/><circle class="pp" cx="165" cy="185" r="4"/><text x="188" y="188">compare with Claude's outline</text>
     </svg></figure>
-<div class="cap"><div class="meta"><span class="tag">weeks 6, 11, 13</span><span class="tag status">planned</span></div><h3>Reverse outline builder</h3><p>One sentence per paragraph beside the paper, dependency arrows, contribution sentence. Two views of the same annotation: highlights in the text, or the skeleton.</p></div>
+<div class="cap"><div class="meta"><span class="tag">weeks 6, 11, 13</span><span class="tag status">beta</span></div><h3><a href="tools/outline.html">Paper outline</a></h3><p>Upload a PDF or paste your draft. One sentence per paragraph on what it does for the argument, dependency arrows, what each section holds up, and the checks. Write yours first, then reveal the model's. <a href="tools/outline.html">Open the outline tool</a>.</p></div>
 </article>
 <article class="lab">
 <figure><svg viewBox="0 0 320 200" role="img" aria-label="Empty LBW tagger: a stacked ratio bar of evidence, claim, filler, and generic sentences; a text block being tagged; a checklist">
@@ -107,7 +107,7 @@
       <text x="232" y="106">locked until reveal</text>
       <g class="faint"><text class="ti" x="234" y="132">✓  ✓  ✗  ✓</text><text class="ti" x="234" y="146">3 / 4 predicted</text><rect x="228" y="154" width="80" height="24" fill="url(#txt)"/></g>
     </svg></figure>
-<div class="cap"><div class="meta"><span class="tag">weeks 9, 13</span><span class="tag status">planned</span></div><h3>Review prediction sheet</h3><p>Triage a set of reviews, predict accepted / rebutted / ignored, timestamped before the reveal. Doubles as the peer-review form.</p></div>
+<div class="cap"><div class="meta"><span class="tag">weeks 9, 13</span><span class="tag status">beta</span></div><h3><a href="tools/reviewers.html">Reviewer predictor</a></h3><p>Pick the reviewers your paper might draw (fabrication, methods, design, AI, and more), edit what each cares about, get independent reviews and a meta-review. Write your own prediction first. <a href="tools/reviewers.html">Open the reviewer predictor</a>.</p></div>
 </article>
 <article class="lab">
 <figure><svg viewBox="0 0 320 200" role="img" aria-label="AI log: a table of asked, claimed, verified, result, and what was done with it; a verification donut; export button">
